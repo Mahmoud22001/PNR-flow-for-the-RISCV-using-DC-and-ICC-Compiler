@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : riscv_core
+Version: K-2015.06
+Date   : Sat Jan  6 03:44:57 2024
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary_ff1p25v0c (File: /home/IC/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ff1p25v0c.db)
+
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary_ff1p25v0c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+riscv_core             5K_hvratio_1_1    NangateOpenCellLibrary_ff1p25v0c
+
+
+Global Operating Voltage = 1.25 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   3.2265 mW   (75%)
+  Net Switching Power  =   1.0535 mW   (25%)
+                         ---------
+Total Dynamic Power    =   4.2800 mW  (100%)
+
+Cell Leakage Power     =   2.8783 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network    118.6034          208.3470        1.0024e+04          336.9744  (   4.71%)
+register       2.7054e+03           51.6453        6.6755e+05        3.4245e+03  (  47.84%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    402.5042          793.5475        2.2008e+06        3.3968e+03  (  47.45%)
+--------------------------------------------------------------------------------------------------
+Total          3.2265e+03 uW     1.0535e+03 uW     2.8783e+06 nW     7.1583e+03 uW
+1

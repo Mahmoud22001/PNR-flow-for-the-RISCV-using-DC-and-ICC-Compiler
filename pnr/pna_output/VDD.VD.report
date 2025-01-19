@@ -1,0 +1,17 @@
+**************************************************************
+* Voltage Drop Violation Report
+*
+* Units:
+*   Length Unit         : um
+*   Length Scale        : 0.001
+*   Voltage Unit        : mV
+*
+* Cell Name : riscv_core
+* PG Net    : VDD
+*
+* Threshold: 252.106e-3
+*
+* Format: [left bottom right top] on Layer is voltage
+*
+[5056400 3455150 5102000 3456850] on metal1 is 252.106e-3
+[5102000 3455150 5122900 3456850] on metal1 is 252.106e-3

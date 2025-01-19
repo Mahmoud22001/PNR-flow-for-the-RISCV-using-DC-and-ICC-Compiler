@@ -1,0 +1,804 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : riscv_core
+Version: K-2015.06
+Date   : Sat Jan  6 03:44:57 2024
+****************************************
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary_ff1p25v0c
+Wire Load Model Mode: top
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_98_i_r_REG77_S19
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.00 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.06       0.06 r
+  U18/ZN (NAND2_X1)                                       0.06       0.12 f
+  U157/ZN (INV_X1)                                        0.04       0.16 r
+  U158/ZN (AND2_X2)                                       0.05       0.21 r
+  U95/ZN (AND2_X2)                                        0.09       0.30 r
+  U1224/ZN (AOI221_X1)                                    0.05       0.35 f
+  U1259/ZN (AND4_X1)                                      0.03       0.38 f
+  U242/ZN (OAI21_X1)                                      0.05       0.43 r
+  U13521/ZN (AND2_X2)                                     0.07       0.50 r
+  U26/Z (BUF_X4)                                          0.06       0.57 r
+  u_muldiv/dp_cluster_0/mult_125/S0_53/S (FA_X1)          0.09       0.66 f
+  u_muldiv/dp_cluster_0/mult_125/S2_2_52/S (FA_X1)        0.08       0.74 r
+  u_muldiv/dp_cluster_0/mult_125/S2_3_51/S (FA_X1)        0.08       0.82 f
+  u_muldiv/dp_cluster_0/mult_125/S2_4_50/S (FA_X1)        0.08       0.90 r
+  u_muldiv/dp_cluster_0/mult_125/S2_5_49/S (FA_X1)        0.08       0.98 f
+  u_muldiv/dp_cluster_0/mult_125/S2_6_48/S (FA_X1)        0.08       1.06 r
+  u_muldiv/dp_cluster_0/mult_125/S2_7_47/S (FA_X1)        0.08       1.14 f
+  u_muldiv/dp_cluster_0/mult_125/S2_8_46/S (FA_X1)        0.08       1.22 r
+  u_muldiv/dp_cluster_0/mult_125/S2_9_45/S (FA_X1)        0.08       1.29 f
+  u_muldiv/dp_cluster_0/mult_125/S2_10_44/S (FA_X1)       0.08       1.38 r
+  u_muldiv/dp_cluster_0/mult_125/S2_11_43/S (FA_X1)       0.08       1.45 f
+  u_muldiv/dp_cluster_0/mult_125/S2_12_42/S (FA_X1)       0.08       1.54 r
+  u_muldiv/dp_cluster_0/mult_125/S2_13_41/S (FA_X1)       0.08       1.61 f
+  u_muldiv/dp_cluster_0/mult_125/S2_14_40/S (FA_X1)       0.08       1.69 r
+  u_muldiv/dp_cluster_0/mult_125/S2_15_39/S (FA_X1)       0.08       1.77 f
+  u_muldiv/dp_cluster_0/mult_125/S2_16_38/S (FA_X1)       0.08       1.85 r
+  u_muldiv/dp_cluster_0/mult_125/S2_17_37/S (FA_X1)       0.08       1.93 f
+  u_muldiv/dp_cluster_0/mult_125/S2_18_36/S (FA_X1)       0.08       2.01 r
+  u_muldiv/dp_cluster_0/mult_125/S2_19_35/S (FA_X1)       0.08       2.09 f
+  u_muldiv/dp_cluster_0/mult_125/S2_20_34/S (FA_X1)       0.08       2.17 r
+  u_muldiv/dp_cluster_0/mult_125/S2_21_33/S (FA_X1)       0.08       2.24 f
+  u_muldiv/dp_cluster_0/mult_125/S2_22_32/S (FA_X1)       0.08       2.33 r
+  u_muldiv/dp_cluster_0/mult_125/S2_23_31/S (FA_X1)       0.07       2.40 f
+  u_muldiv/dp_cluster_0/mult_125/S2_24_30/S (FA_X1)       0.08       2.49 r
+  u_muldiv/dp_cluster_0/mult_125/S2_25_29/S (FA_X1)       0.07       2.56 f
+  u_muldiv/dp_cluster_0/mult_125/S2_26_28/S (FA_X1)       0.08       2.64 r
+  u_muldiv/dp_cluster_0/mult_125/S2_27_27/S (FA_X1)       0.07       2.72 f
+  u_muldiv/dp_cluster_0/mult_125/S2_28_26/S (FA_X1)       0.08       2.80 r
+  u_muldiv/dp_cluster_0/mult_125/S2_29_25/S (FA_X1)       0.07       2.88 f
+  u_muldiv/dp_cluster_0/mult_125/S2_30_24/S (FA_X1)       0.08       2.96 r
+  u_muldiv/dp_cluster_0/mult_125/S2_31_23/S (FA_X1)       0.07       3.03 f
+  u_muldiv/dp_cluster_0/mult_125/S2_32_22/S (FA_X1)       0.08       3.12 r
+  u_muldiv/dp_cluster_0/mult_125/S2_33_21/S (FA_X1)       0.07       3.19 f
+  u_muldiv/dp_cluster_0/mult_125/S2_34_20/S (FA_X1)       0.08       3.28 r
+  u_muldiv/dp_cluster_0/mult_125/S2_35_19/S (FA_X1)       0.07       3.35 f
+  u_muldiv/dp_cluster_0/mult_125/S2_36_18/S (FA_X1)       0.08       3.43 r
+  R_98_i_r_REG77_S19/D (DFFR_X1)                          0.01       3.44 r
+  data arrival time                                                  3.44
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.04       3.46
+  R_98_i_r_REG77_S19/CK (DFFR_X1)                         0.00       3.46 r
+  library setup time                                     -0.02       3.44
+  data required time                                                 3.44
+  --------------------------------------------------------------------------
+  data required time                                                 3.44
+  data arrival time                                                 -3.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_95_i_r_REG101_S4
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.00 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.06       0.06 r
+  U18/ZN (NAND2_X1)                                       0.06       0.12 f
+  U157/ZN (INV_X1)                                        0.04       0.16 r
+  U158/ZN (AND2_X2)                                       0.05       0.21 r
+  U95/ZN (AND2_X2)                                        0.09       0.30 r
+  U1224/ZN (AOI221_X1)                                    0.05       0.35 f
+  U1259/ZN (AND4_X1)                                      0.03       0.38 f
+  U242/ZN (OAI21_X1)                                      0.05       0.43 r
+  U13521/ZN (AND2_X2)                                     0.07       0.50 r
+  U26/Z (BUF_X4)                                          0.06       0.57 r
+  u_muldiv/dp_cluster_0/mult_125/S0_50/S (FA_X1)          0.09       0.66 f
+  u_muldiv/dp_cluster_0/mult_125/S2_2_49/S (FA_X1)        0.08       0.74 r
+  u_muldiv/dp_cluster_0/mult_125/S2_3_48/S (FA_X1)        0.08       0.82 f
+  u_muldiv/dp_cluster_0/mult_125/S2_4_47/S (FA_X1)        0.08       0.90 r
+  u_muldiv/dp_cluster_0/mult_125/S2_5_46/S (FA_X1)        0.08       0.98 f
+  u_muldiv/dp_cluster_0/mult_125/S2_6_45/S (FA_X1)        0.08       1.06 r
+  u_muldiv/dp_cluster_0/mult_125/S2_7_44/S (FA_X1)        0.08       1.14 f
+  u_muldiv/dp_cluster_0/mult_125/S2_8_43/S (FA_X1)        0.08       1.22 r
+  u_muldiv/dp_cluster_0/mult_125/S2_9_42/S (FA_X1)        0.08       1.29 f
+  u_muldiv/dp_cluster_0/mult_125/S2_10_41/S (FA_X1)       0.08       1.38 r
+  u_muldiv/dp_cluster_0/mult_125/S2_11_40/S (FA_X1)       0.08       1.45 f
+  u_muldiv/dp_cluster_0/mult_125/S2_12_39/S (FA_X1)       0.08       1.54 r
+  u_muldiv/dp_cluster_0/mult_125/S2_13_38/S (FA_X1)       0.08       1.61 f
+  u_muldiv/dp_cluster_0/mult_125/S2_14_37/S (FA_X1)       0.08       1.69 r
+  u_muldiv/dp_cluster_0/mult_125/S2_15_36/S (FA_X1)       0.08       1.77 f
+  u_muldiv/dp_cluster_0/mult_125/S2_16_35/S (FA_X1)       0.08       1.85 r
+  u_muldiv/dp_cluster_0/mult_125/S2_17_34/S (FA_X1)       0.08       1.93 f
+  u_muldiv/dp_cluster_0/mult_125/S2_18_33/S (FA_X1)       0.08       2.01 r
+  u_muldiv/dp_cluster_0/mult_125/S2_19_32/S (FA_X1)       0.08       2.09 f
+  u_muldiv/dp_cluster_0/mult_125/S2_20_31/S (FA_X1)       0.08       2.17 r
+  u_muldiv/dp_cluster_0/mult_125/S2_21_30/S (FA_X1)       0.07       2.24 f
+  u_muldiv/dp_cluster_0/mult_125/S2_22_29/S (FA_X1)       0.08       2.33 r
+  u_muldiv/dp_cluster_0/mult_125/S2_23_28/S (FA_X1)       0.07       2.40 f
+  u_muldiv/dp_cluster_0/mult_125/S2_24_27/S (FA_X1)       0.08       2.48 r
+  u_muldiv/dp_cluster_0/mult_125/S2_25_26/S (FA_X1)       0.07       2.56 f
+  u_muldiv/dp_cluster_0/mult_125/S2_26_25/S (FA_X1)       0.08       2.64 r
+  u_muldiv/dp_cluster_0/mult_125/S2_27_24/S (FA_X1)       0.07       2.72 f
+  u_muldiv/dp_cluster_0/mult_125/S2_28_23/S (FA_X1)       0.08       2.80 r
+  u_muldiv/dp_cluster_0/mult_125/S2_29_22/S (FA_X1)       0.07       2.88 f
+  u_muldiv/dp_cluster_0/mult_125/S2_30_21/S (FA_X1)       0.08       2.96 r
+  u_muldiv/dp_cluster_0/mult_125/S2_31_20/S (FA_X1)       0.07       3.03 f
+  u_muldiv/dp_cluster_0/mult_125/S2_32_19/S (FA_X1)       0.08       3.12 r
+  u_muldiv/dp_cluster_0/mult_125/S2_33_18/S (FA_X1)       0.07       3.19 f
+  u_muldiv/dp_cluster_0/mult_125/S2_34_17/S (FA_X1)       0.08       3.28 r
+  u_muldiv/dp_cluster_0/mult_125/S2_35_16/S (FA_X1)       0.07       3.35 f
+  u_muldiv/dp_cluster_0/mult_125/S2_36_15/S (FA_X1)       0.08       3.43 r
+  R_95_i_r_REG101_S4/D (DFFR_X1)                          0.01       3.44 r
+  data arrival time                                                  3.44
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.04       3.46
+  R_95_i_r_REG101_S4/CK (DFFR_X1)                         0.00       3.46 r
+  library setup time                                     -0.02       3.44
+  data required time                                                 3.44
+  --------------------------------------------------------------------------
+  data required time                                                 3.44
+  data arrival time                                                 -3.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_101 (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.00 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.06       0.06 r
+  U18/ZN (NAND2_X1)                                       0.06       0.12 f
+  U157/ZN (INV_X1)                                        0.04       0.16 r
+  U158/ZN (AND2_X2)                                       0.05       0.21 r
+  U95/ZN (AND2_X2)                                        0.09       0.30 r
+  U1224/ZN (AOI221_X1)                                    0.05       0.35 f
+  U1259/ZN (AND4_X1)                                      0.03       0.38 f
+  U242/ZN (OAI21_X1)                                      0.05       0.43 r
+  U13521/ZN (AND2_X2)                                     0.07       0.50 r
+  U26/Z (BUF_X4)                                          0.06       0.57 r
+  u_muldiv/dp_cluster_0/mult_125/S0_48/S (FA_X1)          0.09       0.66 f
+  u_muldiv/dp_cluster_0/mult_125/S2_2_47/S (FA_X1)        0.08       0.74 r
+  u_muldiv/dp_cluster_0/mult_125/S2_3_46/S (FA_X1)        0.08       0.82 f
+  u_muldiv/dp_cluster_0/mult_125/S2_4_45/S (FA_X1)        0.08       0.90 r
+  u_muldiv/dp_cluster_0/mult_125/S2_5_44/S (FA_X1)        0.08       0.98 f
+  u_muldiv/dp_cluster_0/mult_125/S2_6_43/S (FA_X1)        0.08       1.06 r
+  u_muldiv/dp_cluster_0/mult_125/S2_7_42/S (FA_X1)        0.08       1.14 f
+  u_muldiv/dp_cluster_0/mult_125/S2_8_41/S (FA_X1)        0.08       1.22 r
+  u_muldiv/dp_cluster_0/mult_125/S2_9_40/S (FA_X1)        0.08       1.29 f
+  u_muldiv/dp_cluster_0/mult_125/S2_10_39/S (FA_X1)       0.08       1.38 r
+  u_muldiv/dp_cluster_0/mult_125/S2_11_38/S (FA_X1)       0.08       1.45 f
+  u_muldiv/dp_cluster_0/mult_125/S2_12_37/S (FA_X1)       0.08       1.54 r
+  u_muldiv/dp_cluster_0/mult_125/S2_13_36/S (FA_X1)       0.08       1.61 f
+  u_muldiv/dp_cluster_0/mult_125/S2_14_35/S (FA_X1)       0.08       1.69 r
+  u_muldiv/dp_cluster_0/mult_125/S2_15_34/S (FA_X1)       0.08       1.77 f
+  u_muldiv/dp_cluster_0/mult_125/S2_16_33/S (FA_X1)       0.08       1.85 r
+  u_muldiv/dp_cluster_0/mult_125/S2_17_32/S (FA_X1)       0.08       1.93 f
+  u_muldiv/dp_cluster_0/mult_125/S2_18_31/S (FA_X1)       0.08       2.01 r
+  u_muldiv/dp_cluster_0/mult_125/S2_19_30/S (FA_X1)       0.07       2.09 f
+  u_muldiv/dp_cluster_0/mult_125/S2_20_29/S (FA_X1)       0.08       2.17 r
+  u_muldiv/dp_cluster_0/mult_125/S2_21_28/S (FA_X1)       0.07       2.24 f
+  u_muldiv/dp_cluster_0/mult_125/S2_22_27/S (FA_X1)       0.08       2.33 r
+  u_muldiv/dp_cluster_0/mult_125/S2_23_26/S (FA_X1)       0.07       2.40 f
+  u_muldiv/dp_cluster_0/mult_125/S2_24_25/S (FA_X1)       0.08       2.48 r
+  u_muldiv/dp_cluster_0/mult_125/S2_25_24/S (FA_X1)       0.07       2.56 f
+  u_muldiv/dp_cluster_0/mult_125/S2_26_23/S (FA_X1)       0.08       2.64 r
+  u_muldiv/dp_cluster_0/mult_125/S2_27_22/S (FA_X1)       0.07       2.72 f
+  u_muldiv/dp_cluster_0/mult_125/S2_28_21/S (FA_X1)       0.08       2.80 r
+  u_muldiv/dp_cluster_0/mult_125/S2_29_20/S (FA_X1)       0.07       2.88 f
+  u_muldiv/dp_cluster_0/mult_125/S2_30_19/S (FA_X1)       0.08       2.96 r
+  u_muldiv/dp_cluster_0/mult_125/S2_31_18/S (FA_X1)       0.07       3.03 f
+  u_muldiv/dp_cluster_0/mult_125/S2_32_17/S (FA_X1)       0.08       3.12 r
+  u_muldiv/dp_cluster_0/mult_125/S2_33_16/S (FA_X1)       0.07       3.19 f
+  u_muldiv/dp_cluster_0/mult_125/S2_34_15/S (FA_X1)       0.08       3.27 r
+  u_muldiv/dp_cluster_0/mult_125/S2_35_14/S (FA_X1)       0.07       3.35 f
+  u_muldiv/dp_cluster_0/mult_125/S2_36_13/S (FA_X1)       0.08       3.43 r
+  R_101/D (DFFR_X1)                                       0.01       3.44 r
+  data arrival time                                                  3.44
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.04       3.46
+  R_101/CK (DFFR_X1)                                      0.00       3.46 r
+  library setup time                                     -0.02       3.44
+  data required time                                                 3.44
+  --------------------------------------------------------------------------
+  data required time                                                 3.44
+  data arrival time                                                 -3.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: clk_i_r_REG2181_S9
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_104_i_r_REG48_S19
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_i_r_REG2181_S9/CK (DFFS_X1)                         0.00       0.00 r
+  clk_i_r_REG2181_S9/Q (DFFS_X1)                          0.06       0.06 f
+  U6/ZN (NOR2_X2)                                         0.05       0.11 r
+  U1207/Z (XOR2_X1)                                       0.05       0.16 r
+  U1210/ZN (NOR3_X1)                                      0.02       0.18 f
+  U127/ZN (AND2_X1)                                       0.03       0.21 f
+  U3365/ZN (NAND2_X1)                                     0.04       0.25 r
+  U317/Z (BUF_X2)                                         0.07       0.32 r
+  U3366/ZN (INV_X1)                                       0.06       0.38 f
+  U2665/ZN (OR2_X2)                                       0.07       0.45 f
+  U2589/ZN (OAI221_X4)                                    0.09       0.54 r
+  U14378/ZN (AND2_X2)                                     0.11       0.64 r
+  U47/Z (BUF_X1)                                          0.07       0.72 r
+  u_muldiv/dp_cluster_0/mult_125/S2_3_52/S (FA_X1)        0.10       0.82 f
+  u_muldiv/dp_cluster_0/mult_125/S2_4_51/S (FA_X1)        0.08       0.90 r
+  u_muldiv/dp_cluster_0/mult_125/S2_5_50/S (FA_X1)        0.08       0.97 f
+  u_muldiv/dp_cluster_0/mult_125/S2_6_49/S (FA_X1)        0.08       1.06 r
+  u_muldiv/dp_cluster_0/mult_125/S2_7_48/S (FA_X1)        0.08       1.13 f
+  u_muldiv/dp_cluster_0/mult_125/S2_8_47/S (FA_X1)        0.08       1.22 r
+  u_muldiv/dp_cluster_0/mult_125/S2_9_46/S (FA_X1)        0.08       1.29 f
+  u_muldiv/dp_cluster_0/mult_125/S2_10_45/S (FA_X1)       0.08       1.37 r
+  u_muldiv/dp_cluster_0/mult_125/S2_11_44/S (FA_X1)       0.08       1.45 f
+  u_muldiv/dp_cluster_0/mult_125/S2_12_43/S (FA_X1)       0.08       1.53 r
+  u_muldiv/dp_cluster_0/mult_125/S2_13_42/S (FA_X1)       0.08       1.61 f
+  u_muldiv/dp_cluster_0/mult_125/S2_14_41/S (FA_X1)       0.08       1.69 r
+  u_muldiv/dp_cluster_0/mult_125/S2_15_40/S (FA_X1)       0.08       1.77 f
+  u_muldiv/dp_cluster_0/mult_125/S2_16_39/S (FA_X1)       0.08       1.85 r
+  u_muldiv/dp_cluster_0/mult_125/S2_17_38/S (FA_X1)       0.08       1.92 f
+  u_muldiv/dp_cluster_0/mult_125/S2_18_37/S (FA_X1)       0.08       2.01 r
+  u_muldiv/dp_cluster_0/mult_125/S2_19_36/S (FA_X1)       0.08       2.08 f
+  u_muldiv/dp_cluster_0/mult_125/S2_20_35/S (FA_X1)       0.08       2.17 r
+  u_muldiv/dp_cluster_0/mult_125/S2_21_34/S (FA_X1)       0.08       2.24 f
+  u_muldiv/dp_cluster_0/mult_125/S2_22_33/S (FA_X1)       0.08       2.32 r
+  u_muldiv/dp_cluster_0/mult_125/S2_23_32/S (FA_X1)       0.07       2.40 f
+  u_muldiv/dp_cluster_0/mult_125/S2_24_31/S (FA_X1)       0.08       2.48 r
+  u_muldiv/dp_cluster_0/mult_125/S2_25_30/S (FA_X1)       0.07       2.56 f
+  u_muldiv/dp_cluster_0/mult_125/S2_26_29/S (FA_X1)       0.08       2.64 r
+  u_muldiv/dp_cluster_0/mult_125/S2_27_28/S (FA_X1)       0.07       2.71 f
+  u_muldiv/dp_cluster_0/mult_125/S2_28_27/S (FA_X1)       0.08       2.80 r
+  u_muldiv/dp_cluster_0/mult_125/S2_29_26/S (FA_X1)       0.07       2.87 f
+  u_muldiv/dp_cluster_0/mult_125/S2_30_25/S (FA_X1)       0.08       2.96 r
+  u_muldiv/dp_cluster_0/mult_125/S2_31_24/S (FA_X1)       0.07       3.03 f
+  u_muldiv/dp_cluster_0/mult_125/S2_32_23/S (FA_X1)       0.08       3.11 r
+  u_muldiv/dp_cluster_0/mult_125/S2_33_22/S (FA_X1)       0.07       3.19 f
+  u_muldiv/dp_cluster_0/mult_125/S2_34_21/S (FA_X1)       0.08       3.27 r
+  u_muldiv/dp_cluster_0/mult_125/S2_35_20/S (FA_X1)       0.07       3.35 f
+  u_muldiv/dp_cluster_0/mult_125/S2_36_19/S (FA_X1)       0.08       3.43 r
+  R_104_i_r_REG48_S19/D (DFFR_X1)                         0.01       3.44 r
+  data arrival time                                                  3.44
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.04       3.46
+  R_104_i_r_REG48_S19/CK (DFFR_X1)                        0.00       3.46 r
+  library setup time                                     -0.02       3.44
+  data required time                                                 3.44
+  --------------------------------------------------------------------------
+  data required time                                                 3.44
+  data arrival time                                                 -3.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: clk_i_r_REG2181_S9
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_113 (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_i_r_REG2181_S9/CK (DFFS_X1)                         0.00       0.00 r
+  clk_i_r_REG2181_S9/Q (DFFS_X1)                          0.06       0.06 f
+  U6/ZN (NOR2_X2)                                         0.05       0.11 r
+  U1207/Z (XOR2_X1)                                       0.05       0.16 r
+  U1210/ZN (NOR3_X1)                                      0.02       0.18 f
+  U127/ZN (AND2_X1)                                       0.03       0.21 f
+  U3365/ZN (NAND2_X1)                                     0.04       0.25 r
+  U317/Z (BUF_X2)                                         0.07       0.32 r
+  U3366/ZN (INV_X1)                                       0.06       0.38 f
+  U2665/ZN (OR2_X2)                                       0.07       0.45 f
+  U2589/ZN (OAI221_X4)                                    0.09       0.54 r
+  U14378/ZN (AND2_X2)                                     0.11       0.64 r
+  U47/Z (BUF_X1)                                          0.07       0.72 r
+  u_muldiv/dp_cluster_0/mult_125/S2_3_55/S (FA_X1)        0.10       0.82 f
+  u_muldiv/dp_cluster_0/mult_125/S2_4_54/S (FA_X1)        0.08       0.90 r
+  u_muldiv/dp_cluster_0/mult_125/S2_5_53/S (FA_X1)        0.08       0.97 f
+  u_muldiv/dp_cluster_0/mult_125/S2_6_52/S (FA_X1)        0.08       1.06 r
+  u_muldiv/dp_cluster_0/mult_125/S2_7_51/S (FA_X1)        0.08       1.13 f
+  u_muldiv/dp_cluster_0/mult_125/S2_8_50/S (FA_X1)        0.08       1.22 r
+  u_muldiv/dp_cluster_0/mult_125/S2_9_49/S (FA_X1)        0.08       1.29 f
+  u_muldiv/dp_cluster_0/mult_125/S2_10_48/S (FA_X1)       0.08       1.37 r
+  u_muldiv/dp_cluster_0/mult_125/S2_11_47/S (FA_X1)       0.08       1.45 f
+  u_muldiv/dp_cluster_0/mult_125/S2_12_46/S (FA_X1)       0.08       1.53 r
+  u_muldiv/dp_cluster_0/mult_125/S2_13_45/S (FA_X1)       0.08       1.61 f
+  u_muldiv/dp_cluster_0/mult_125/S2_14_44/S (FA_X1)       0.08       1.69 r
+  u_muldiv/dp_cluster_0/mult_125/S2_15_43/S (FA_X1)       0.08       1.77 f
+  u_muldiv/dp_cluster_0/mult_125/S2_16_42/S (FA_X1)       0.08       1.85 r
+  u_muldiv/dp_cluster_0/mult_125/S2_17_41/S (FA_X1)       0.08       1.92 f
+  u_muldiv/dp_cluster_0/mult_125/S2_18_40/S (FA_X1)       0.08       2.01 r
+  u_muldiv/dp_cluster_0/mult_125/S2_19_39/S (FA_X1)       0.08       2.08 f
+  u_muldiv/dp_cluster_0/mult_125/S2_20_38/S (FA_X1)       0.08       2.17 r
+  u_muldiv/dp_cluster_0/mult_125/S2_21_37/S (FA_X1)       0.08       2.24 f
+  u_muldiv/dp_cluster_0/mult_125/S2_22_36/S (FA_X1)       0.08       2.32 r
+  u_muldiv/dp_cluster_0/mult_125/S2_23_35/S (FA_X1)       0.07       2.40 f
+  u_muldiv/dp_cluster_0/mult_125/S2_24_34/S (FA_X1)       0.08       2.48 r
+  u_muldiv/dp_cluster_0/mult_125/S2_25_33/S (FA_X1)       0.07       2.56 f
+  u_muldiv/dp_cluster_0/mult_125/S2_26_32/S (FA_X1)       0.08       2.64 r
+  u_muldiv/dp_cluster_0/mult_125/S2_27_31/S (FA_X1)       0.07       2.71 f
+  u_muldiv/dp_cluster_0/mult_125/S2_28_30/S (FA_X1)       0.08       2.80 r
+  u_muldiv/dp_cluster_0/mult_125/S2_29_29/S (FA_X1)       0.07       2.87 f
+  u_muldiv/dp_cluster_0/mult_125/S2_30_28/S (FA_X1)       0.08       2.96 r
+  u_muldiv/dp_cluster_0/mult_125/S2_31_27/S (FA_X1)       0.07       3.03 f
+  u_muldiv/dp_cluster_0/mult_125/S2_32_26/S (FA_X1)       0.08       3.11 r
+  u_muldiv/dp_cluster_0/mult_125/S2_33_25/S (FA_X1)       0.07       3.19 f
+  u_muldiv/dp_cluster_0/mult_125/S2_34_24/S (FA_X1)       0.08       3.27 r
+  u_muldiv/dp_cluster_0/mult_125/S2_35_23/S (FA_X1)       0.07       3.35 f
+  u_muldiv/dp_cluster_0/mult_125/S2_36_22/S (FA_X1)       0.08       3.43 r
+  R_113/D (DFFR_X1)                                       0.01       3.44 r
+  data arrival time                                                  3.44
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.04       3.46
+  R_113/CK (DFFR_X1)                                      0.00       3.46 r
+  library setup time                                     -0.02       3.44
+  data required time                                                 3.44
+  --------------------------------------------------------------------------
+  data required time                                                 3.44
+  data arrival time                                                 -3.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: clk_i_r_REG2181_S9
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_119 (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_i_r_REG2181_S9/CK (DFFS_X1)                         0.00       0.00 r
+  clk_i_r_REG2181_S9/Q (DFFS_X1)                          0.06       0.06 f
+  U6/ZN (NOR2_X2)                                         0.05       0.11 r
+  U1200/ZN (INV_X1)                                       0.04       0.14 f
+  U158/ZN (AND2_X2)                                       0.05       0.19 f
+  U192/ZN (AND2_X1)                                       0.04       0.23 f
+  U3363/ZN (INV_X2)                                       0.08       0.31 r
+  U2673/ZN (OAI22_X1)                                     0.05       0.36 f
+  U2674/ZN (AOI221_X1)                                    0.05       0.41 r
+  U122/ZN (NAND3_X1)                                      0.03       0.44 f
+  U121/ZN (OAI21_X1)                                      0.03       0.47 r
+  U150/ZN (NAND2_X1)                                      0.03       0.50 f
+  U14247/ZN (AND2_X2)                                     0.04       0.55 f
+  U46/Z (BUF_X1)                                          0.07       0.62 f
+  u_muldiv/dp_cluster_0/mult_125/S2_2_58/S (FA_X1)        0.11       0.73 r
+  u_muldiv/dp_cluster_0/mult_125/S2_3_57/S (FA_X1)        0.08       0.81 f
+  u_muldiv/dp_cluster_0/mult_125/S2_4_56/S (FA_X1)        0.08       0.89 r
+  u_muldiv/dp_cluster_0/mult_125/S2_5_55/S (FA_X1)        0.08       0.97 f
+  u_muldiv/dp_cluster_0/mult_125/S2_6_54/S (FA_X1)        0.08       1.05 r
+  u_muldiv/dp_cluster_0/mult_125/S2_7_53/S (FA_X1)        0.08       1.12 f
+  u_muldiv/dp_cluster_0/mult_125/S2_8_52/S (FA_X1)        0.08       1.21 r
+  u_muldiv/dp_cluster_0/mult_125/S2_9_51/S (FA_X1)        0.08       1.28 f
+  u_muldiv/dp_cluster_0/mult_125/S2_10_50/S (FA_X1)       0.08       1.37 r
+  u_muldiv/dp_cluster_0/mult_125/S2_11_49/S (FA_X1)       0.08       1.44 f
+  u_muldiv/dp_cluster_0/mult_125/S2_12_48/S (FA_X1)       0.08       1.52 r
+  u_muldiv/dp_cluster_0/mult_125/S2_13_47/S (FA_X1)       0.08       1.60 f
+  u_muldiv/dp_cluster_0/mult_125/S2_14_46/S (FA_X1)       0.08       1.68 r
+  u_muldiv/dp_cluster_0/mult_125/S2_15_45/S (FA_X1)       0.08       1.76 f
+  u_muldiv/dp_cluster_0/mult_125/S2_16_44/S (FA_X1)       0.08       1.84 r
+  u_muldiv/dp_cluster_0/mult_125/S2_17_43/S (FA_X1)       0.08       1.92 f
+  u_muldiv/dp_cluster_0/mult_125/S2_18_42/S (FA_X1)       0.08       2.00 r
+  u_muldiv/dp_cluster_0/mult_125/S2_19_41/S (FA_X1)       0.08       2.07 f
+  u_muldiv/dp_cluster_0/mult_125/S2_20_40/S (FA_X1)       0.08       2.16 r
+  u_muldiv/dp_cluster_0/mult_125/S2_21_39/S (FA_X1)       0.08       2.23 f
+  u_muldiv/dp_cluster_0/mult_125/S2_22_38/S (FA_X1)       0.08       2.31 r
+  u_muldiv/dp_cluster_0/mult_125/S2_23_37/S (FA_X1)       0.07       2.39 f
+  u_muldiv/dp_cluster_0/mult_125/S2_24_36/S (FA_X1)       0.08       2.47 r
+  u_muldiv/dp_cluster_0/mult_125/S2_25_35/S (FA_X1)       0.07       2.55 f
+  u_muldiv/dp_cluster_0/mult_125/S2_26_34/S (FA_X1)       0.08       2.63 r
+  u_muldiv/dp_cluster_0/mult_125/S2_27_33/S (FA_X1)       0.07       2.71 f
+  u_muldiv/dp_cluster_0/mult_125/S2_28_32/S (FA_X1)       0.08       2.79 r
+  u_muldiv/dp_cluster_0/mult_125/S2_29_31/S (FA_X1)       0.07       2.86 f
+  u_muldiv/dp_cluster_0/mult_125/S2_30_30/S (FA_X1)       0.08       2.95 r
+  u_muldiv/dp_cluster_0/mult_125/S2_31_29/S (FA_X1)       0.07       3.02 f
+  u_muldiv/dp_cluster_0/mult_125/S2_32_28/S (FA_X1)       0.08       3.11 r
+  u_muldiv/dp_cluster_0/mult_125/S2_33_27/S (FA_X1)       0.07       3.18 f
+  u_muldiv/dp_cluster_0/mult_125/S2_34_26/S (FA_X1)       0.08       3.26 r
+  u_muldiv/dp_cluster_0/mult_125/S2_35_25/S (FA_X1)       0.07       3.34 f
+  u_muldiv/dp_cluster_0/mult_125/S2_36_24/S (FA_X1)       0.08       3.42 r
+  R_119/D (DFFR_X1)                                       0.01       3.43 r
+  data arrival time                                                  3.43
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.04       3.46
+  R_119/CK (DFFR_X1)                                      0.00       3.46 r
+  library setup time                                     -0.02       3.44
+  data required time                                                 3.44
+  --------------------------------------------------------------------------
+  data required time                                                 3.44
+  data arrival time                                                 -3.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: clk_i_r_REG2181_S9
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_122_i_r_REG3_S4
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_i_r_REG2181_S9/CK (DFFS_X1)                         0.00       0.00 r
+  clk_i_r_REG2181_S9/Q (DFFS_X1)                          0.06       0.06 f
+  U6/ZN (NOR2_X2)                                         0.05       0.11 r
+  U1200/ZN (INV_X1)                                       0.04       0.14 f
+  U158/ZN (AND2_X2)                                       0.05       0.19 f
+  U192/ZN (AND2_X1)                                       0.04       0.23 f
+  U3363/ZN (INV_X2)                                       0.08       0.31 r
+  U2673/ZN (OAI22_X1)                                     0.05       0.36 f
+  U2674/ZN (AOI221_X1)                                    0.05       0.41 r
+  U122/ZN (NAND3_X1)                                      0.03       0.44 f
+  U121/ZN (OAI21_X1)                                      0.03       0.47 r
+  U150/ZN (NAND2_X1)                                      0.03       0.50 f
+  U14247/ZN (AND2_X2)                                     0.04       0.55 f
+  U46/Z (BUF_X1)                                          0.07       0.62 f
+  u_muldiv/dp_cluster_0/mult_125/S2_2_60/S (FA_X1)        0.11       0.73 r
+  u_muldiv/dp_cluster_0/mult_125/S2_3_59/S (FA_X1)        0.08       0.81 f
+  u_muldiv/dp_cluster_0/mult_125/S2_4_58/S (FA_X1)        0.08       0.89 r
+  u_muldiv/dp_cluster_0/mult_125/S2_5_57/S (FA_X1)        0.08       0.97 f
+  u_muldiv/dp_cluster_0/mult_125/S2_6_56/S (FA_X1)        0.08       1.05 r
+  u_muldiv/dp_cluster_0/mult_125/S2_7_55/S (FA_X1)        0.08       1.12 f
+  u_muldiv/dp_cluster_0/mult_125/S2_8_54/S (FA_X1)        0.08       1.21 r
+  u_muldiv/dp_cluster_0/mult_125/S2_9_53/S (FA_X1)        0.08       1.28 f
+  u_muldiv/dp_cluster_0/mult_125/S2_10_52/S (FA_X1)       0.08       1.37 r
+  u_muldiv/dp_cluster_0/mult_125/S2_11_51/S (FA_X1)       0.08       1.44 f
+  u_muldiv/dp_cluster_0/mult_125/S2_12_50/S (FA_X1)       0.08       1.52 r
+  u_muldiv/dp_cluster_0/mult_125/S2_13_49/S (FA_X1)       0.08       1.60 f
+  u_muldiv/dp_cluster_0/mult_125/S2_14_48/S (FA_X1)       0.08       1.68 r
+  u_muldiv/dp_cluster_0/mult_125/S2_15_47/S (FA_X1)       0.08       1.76 f
+  u_muldiv/dp_cluster_0/mult_125/S2_16_46/S (FA_X1)       0.08       1.84 r
+  u_muldiv/dp_cluster_0/mult_125/S2_17_45/S (FA_X1)       0.08       1.92 f
+  u_muldiv/dp_cluster_0/mult_125/S2_18_44/S (FA_X1)       0.08       2.00 r
+  u_muldiv/dp_cluster_0/mult_125/S2_19_43/S (FA_X1)       0.08       2.07 f
+  u_muldiv/dp_cluster_0/mult_125/S2_20_42/S (FA_X1)       0.08       2.16 r
+  u_muldiv/dp_cluster_0/mult_125/S2_21_41/S (FA_X1)       0.08       2.23 f
+  u_muldiv/dp_cluster_0/mult_125/S2_22_40/S (FA_X1)       0.08       2.31 r
+  u_muldiv/dp_cluster_0/mult_125/S2_23_39/S (FA_X1)       0.07       2.39 f
+  u_muldiv/dp_cluster_0/mult_125/S2_24_38/S (FA_X1)       0.08       2.47 r
+  u_muldiv/dp_cluster_0/mult_125/S2_25_37/S (FA_X1)       0.07       2.55 f
+  u_muldiv/dp_cluster_0/mult_125/S2_26_36/S (FA_X1)       0.08       2.63 r
+  u_muldiv/dp_cluster_0/mult_125/S2_27_35/S (FA_X1)       0.07       2.71 f
+  u_muldiv/dp_cluster_0/mult_125/S2_28_34/S (FA_X1)       0.08       2.79 r
+  u_muldiv/dp_cluster_0/mult_125/S2_29_33/S (FA_X1)       0.07       2.86 f
+  u_muldiv/dp_cluster_0/mult_125/S2_30_32/S (FA_X1)       0.08       2.95 r
+  u_muldiv/dp_cluster_0/mult_125/S2_31_31/S (FA_X1)       0.07       3.02 f
+  u_muldiv/dp_cluster_0/mult_125/S2_32_30/S (FA_X1)       0.08       3.11 r
+  u_muldiv/dp_cluster_0/mult_125/S2_33_29/S (FA_X1)       0.07       3.18 f
+  u_muldiv/dp_cluster_0/mult_125/S2_34_28/S (FA_X1)       0.08       3.26 r
+  u_muldiv/dp_cluster_0/mult_125/S2_35_27/S (FA_X1)       0.07       3.34 f
+  u_muldiv/dp_cluster_0/mult_125/S2_36_26/S (FA_X1)       0.08       3.42 r
+  R_122_i_r_REG3_S4/D (DFFR_X1)                           0.01       3.43 r
+  data arrival time                                                  3.43
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.04       3.46
+  R_122_i_r_REG3_S4/CK (DFFR_X1)                          0.00       3.46 r
+  library setup time                                     -0.02       3.44
+  data required time                                                 3.44
+  --------------------------------------------------------------------------
+  data required time                                                 3.44
+  data arrival time                                                 -3.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: clk_i_r_REG2181_S9
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_116_i_r_REG3_S4
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_i_r_REG2181_S9/CK (DFFS_X1)                         0.00       0.00 r
+  clk_i_r_REG2181_S9/Q (DFFS_X1)                          0.06       0.06 f
+  U6/ZN (NOR2_X2)                                         0.05       0.11 r
+  U1207/Z (XOR2_X1)                                       0.05       0.16 r
+  U1210/ZN (NOR3_X1)                                      0.02       0.18 f
+  U127/ZN (AND2_X1)                                       0.03       0.21 f
+  U3365/ZN (NAND2_X1)                                     0.04       0.25 r
+  U317/Z (BUF_X2)                                         0.07       0.32 r
+  U3366/ZN (INV_X1)                                       0.06       0.38 f
+  U35/ZN (NOR2_X1)                                        0.04       0.41 r
+  U168/ZN (AND2_X1)                                       0.03       0.44 r
+  U679/ZN (NOR2_X1)                                       0.02       0.46 f
+  U150/ZN (NAND2_X1)                                      0.03       0.49 r
+  U14247/ZN (AND2_X2)                                     0.05       0.54 r
+  U46/Z (BUF_X1)                                          0.09       0.63 r
+  u_muldiv/dp_cluster_0/mult_125/S2_2_61/S (FA_X1)        0.10       0.73 f
+  u_muldiv/dp_cluster_0/mult_125/S2_3_60/S (FA_X1)        0.08       0.82 r
+  u_muldiv/dp_cluster_0/mult_125/S2_4_59/S (FA_X1)        0.08       0.89 f
+  u_muldiv/dp_cluster_0/mult_125/S2_5_58/S (FA_X1)        0.08       0.98 r
+  u_muldiv/dp_cluster_0/mult_125/S2_6_57/S (FA_X1)        0.08       1.05 f
+  u_muldiv/dp_cluster_0/mult_125/S2_7_56/S (FA_X1)        0.08       1.13 r
+  u_muldiv/dp_cluster_0/mult_125/S2_8_55/S (FA_X1)        0.08       1.21 f
+  u_muldiv/dp_cluster_0/mult_125/S2_9_54/S (FA_X1)        0.08       1.29 r
+  u_muldiv/dp_cluster_0/mult_125/S2_10_53/S (FA_X1)       0.08       1.37 f
+  u_muldiv/dp_cluster_0/mult_125/S2_11_52/S (FA_X1)       0.08       1.45 r
+  u_muldiv/dp_cluster_0/mult_125/S2_12_51/S (FA_X1)       0.08       1.53 f
+  u_muldiv/dp_cluster_0/mult_125/S2_13_50/S (FA_X1)       0.08       1.61 r
+  u_muldiv/dp_cluster_0/mult_125/S2_14_49/S (FA_X1)       0.08       1.68 f
+  u_muldiv/dp_cluster_0/mult_125/S2_15_48/S (FA_X1)       0.08       1.77 r
+  u_muldiv/dp_cluster_0/mult_125/S2_16_47/S (FA_X1)       0.08       1.84 f
+  u_muldiv/dp_cluster_0/mult_125/S2_17_46/S (FA_X1)       0.08       1.92 r
+  u_muldiv/dp_cluster_0/mult_125/S2_18_45/S (FA_X1)       0.08       2.00 f
+  u_muldiv/dp_cluster_0/mult_125/S2_19_44/S (FA_X1)       0.08       2.08 r
+  u_muldiv/dp_cluster_0/mult_125/S2_20_43/S (FA_X1)       0.08       2.16 f
+  u_muldiv/dp_cluster_0/mult_125/S2_21_42/S (FA_X1)       0.08       2.24 r
+  u_muldiv/dp_cluster_0/mult_125/S2_22_41/S (FA_X1)       0.07       2.32 f
+  u_muldiv/dp_cluster_0/mult_125/S2_23_40/S (FA_X1)       0.08       2.40 r
+  u_muldiv/dp_cluster_0/mult_125/S2_24_39/S (FA_X1)       0.07       2.47 f
+  u_muldiv/dp_cluster_0/mult_125/S2_25_38/S (FA_X1)       0.08       2.56 r
+  u_muldiv/dp_cluster_0/mult_125/S2_26_37/S (FA_X1)       0.07       2.63 f
+  u_muldiv/dp_cluster_0/mult_125/S2_27_36/S (FA_X1)       0.08       2.72 r
+  u_muldiv/dp_cluster_0/mult_125/S2_28_35/S (FA_X1)       0.07       2.79 f
+  u_muldiv/dp_cluster_0/mult_125/S2_29_34/S (FA_X1)       0.08       2.87 r
+  u_muldiv/dp_cluster_0/mult_125/S2_30_33/S (FA_X1)       0.07       2.95 f
+  u_muldiv/dp_cluster_0/mult_125/S2_31_32/S (FA_X1)       0.08       3.03 r
+  u_muldiv/dp_cluster_0/mult_125/S2_32_31/S (FA_X1)       0.07       3.11 f
+  u_muldiv/dp_cluster_0/mult_125/S2_33_30/S (FA_X1)       0.08       3.19 r
+  u_muldiv/dp_cluster_0/mult_125/S2_34_29/S (FA_X1)       0.07       3.26 f
+  u_muldiv/dp_cluster_0/mult_125/S2_35_28/S (FA_X1)       0.08       3.35 r
+  u_muldiv/dp_cluster_0/mult_125/S2_36_27/S (FA_X1)       0.07       3.42 f
+  R_116_i_r_REG3_S4/D (DFFR_X1)                           0.01       3.43 f
+  data arrival time                                                  3.43
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.04       3.46
+  R_116_i_r_REG3_S4/CK (DFFR_X1)                          0.00       3.46 r
+  library setup time                                     -0.02       3.44
+  data required time                                                 3.44
+  --------------------------------------------------------------------------
+  data required time                                                 3.44
+  data arrival time                                                 -3.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: clk_i_r_REG2181_S9
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_110 (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_i_r_REG2181_S9/CK (DFFS_X1)                         0.00       0.00 r
+  clk_i_r_REG2181_S9/Q (DFFS_X1)                          0.06       0.06 f
+  U6/ZN (NOR2_X2)                                         0.05       0.11 r
+  U1207/Z (XOR2_X1)                                       0.05       0.16 r
+  U1210/ZN (NOR3_X1)                                      0.02       0.18 f
+  U127/ZN (AND2_X1)                                       0.03       0.21 f
+  U3365/ZN (NAND2_X1)                                     0.04       0.25 r
+  U317/Z (BUF_X2)                                         0.07       0.32 r
+  U3366/ZN (INV_X1)                                       0.06       0.38 f
+  U35/ZN (NOR2_X1)                                        0.04       0.41 r
+  U168/ZN (AND2_X1)                                       0.03       0.44 r
+  U679/ZN (NOR2_X1)                                       0.02       0.46 f
+  U150/ZN (NAND2_X1)                                      0.03       0.49 r
+  U14247/ZN (AND2_X2)                                     0.05       0.54 r
+  U46/Z (BUF_X1)                                          0.09       0.63 r
+  u_muldiv/dp_cluster_0/mult_125/S2_2_55/S (FA_X1)        0.10       0.73 f
+  u_muldiv/dp_cluster_0/mult_125/S2_3_54/S (FA_X1)        0.08       0.82 r
+  u_muldiv/dp_cluster_0/mult_125/S2_4_53/S (FA_X1)        0.08       0.89 f
+  u_muldiv/dp_cluster_0/mult_125/S2_5_52/S (FA_X1)        0.08       0.98 r
+  u_muldiv/dp_cluster_0/mult_125/S2_6_51/S (FA_X1)        0.08       1.05 f
+  u_muldiv/dp_cluster_0/mult_125/S2_7_50/S (FA_X1)        0.08       1.13 r
+  u_muldiv/dp_cluster_0/mult_125/S2_8_49/S (FA_X1)        0.08       1.21 f
+  u_muldiv/dp_cluster_0/mult_125/S2_9_48/S (FA_X1)        0.08       1.29 r
+  u_muldiv/dp_cluster_0/mult_125/S2_10_47/S (FA_X1)       0.08       1.37 f
+  u_muldiv/dp_cluster_0/mult_125/S2_11_46/S (FA_X1)       0.08       1.45 r
+  u_muldiv/dp_cluster_0/mult_125/S2_12_45/S (FA_X1)       0.08       1.53 f
+  u_muldiv/dp_cluster_0/mult_125/S2_13_44/S (FA_X1)       0.08       1.61 r
+  u_muldiv/dp_cluster_0/mult_125/S2_14_43/S (FA_X1)       0.08       1.68 f
+  u_muldiv/dp_cluster_0/mult_125/S2_15_42/S (FA_X1)       0.08       1.77 r
+  u_muldiv/dp_cluster_0/mult_125/S2_16_41/S (FA_X1)       0.08       1.84 f
+  u_muldiv/dp_cluster_0/mult_125/S2_17_40/S (FA_X1)       0.08       1.92 r
+  u_muldiv/dp_cluster_0/mult_125/S2_18_39/S (FA_X1)       0.08       2.00 f
+  u_muldiv/dp_cluster_0/mult_125/S2_19_38/S (FA_X1)       0.08       2.08 r
+  u_muldiv/dp_cluster_0/mult_125/S2_20_37/S (FA_X1)       0.08       2.16 f
+  u_muldiv/dp_cluster_0/mult_125/S2_21_36/S (FA_X1)       0.08       2.24 r
+  u_muldiv/dp_cluster_0/mult_125/S2_22_35/S (FA_X1)       0.07       2.32 f
+  u_muldiv/dp_cluster_0/mult_125/S2_23_34/S (FA_X1)       0.08       2.40 r
+  u_muldiv/dp_cluster_0/mult_125/S2_24_33/S (FA_X1)       0.07       2.47 f
+  u_muldiv/dp_cluster_0/mult_125/S2_25_32/S (FA_X1)       0.08       2.56 r
+  u_muldiv/dp_cluster_0/mult_125/S2_26_31/S (FA_X1)       0.07       2.63 f
+  u_muldiv/dp_cluster_0/mult_125/S2_27_30/S (FA_X1)       0.08       2.72 r
+  u_muldiv/dp_cluster_0/mult_125/S2_28_29/S (FA_X1)       0.07       2.79 f
+  u_muldiv/dp_cluster_0/mult_125/S2_29_28/S (FA_X1)       0.08       2.87 r
+  u_muldiv/dp_cluster_0/mult_125/S2_30_27/S (FA_X1)       0.07       2.95 f
+  u_muldiv/dp_cluster_0/mult_125/S2_31_26/S (FA_X1)       0.08       3.03 r
+  u_muldiv/dp_cluster_0/mult_125/S2_32_25/S (FA_X1)       0.07       3.11 f
+  u_muldiv/dp_cluster_0/mult_125/S2_33_24/S (FA_X1)       0.08       3.19 r
+  u_muldiv/dp_cluster_0/mult_125/S2_34_23/S (FA_X1)       0.07       3.26 f
+  u_muldiv/dp_cluster_0/mult_125/S2_35_22/S (FA_X1)       0.08       3.35 r
+  u_muldiv/dp_cluster_0/mult_125/S2_36_21/S (FA_X1)       0.07       3.42 f
+  R_110/D (DFFR_X1)                                       0.01       3.43 f
+  data arrival time                                                  3.43
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.04       3.46
+  R_110/CK (DFFR_X1)                                      0.00       3.46 r
+  library setup time                                     -0.02       3.44
+  data required time                                                 3.44
+  --------------------------------------------------------------------------
+  data required time                                                 3.44
+  data arrival time                                                 -3.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: clk_i_r_REG2181_S9
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_128_i_r_REG3_S4
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_i_r_REG2181_S9/CK (DFFS_X1)                         0.00       0.00 r
+  clk_i_r_REG2181_S9/Q (DFFS_X1)                          0.06       0.06 f
+  U6/ZN (NOR2_X2)                                         0.05       0.11 r
+  U1207/Z (XOR2_X1)                                       0.05       0.16 r
+  U1210/ZN (NOR3_X1)                                      0.02       0.18 f
+  U127/ZN (AND2_X1)                                       0.03       0.21 f
+  U3365/ZN (NAND2_X1)                                     0.04       0.25 r
+  U317/Z (BUF_X2)                                         0.07       0.32 r
+  U3366/ZN (INV_X1)                                       0.06       0.38 f
+  U35/ZN (NOR2_X1)                                        0.04       0.41 r
+  U168/ZN (AND2_X1)                                       0.03       0.44 r
+  U679/ZN (NOR2_X1)                                       0.02       0.46 f
+  U150/ZN (NAND2_X1)                                      0.03       0.49 r
+  U14247/ZN (AND2_X2)                                     0.05       0.54 r
+  U46/Z (BUF_X1)                                          0.09       0.63 r
+  u_muldiv/dp_cluster_0/mult_125/S2_2_58/S (FA_X1)        0.10       0.73 f
+  u_muldiv/dp_cluster_0/mult_125/S2_3_57/S (FA_X1)        0.08       0.82 r
+  u_muldiv/dp_cluster_0/mult_125/S2_4_56/S (FA_X1)        0.08       0.89 f
+  u_muldiv/dp_cluster_0/mult_125/S2_5_55/CO (FA_X1)       0.06       0.95 f
+  u_muldiv/dp_cluster_0/mult_125/S2_6_55/S (FA_X1)        0.09       1.04 r
+  u_muldiv/dp_cluster_0/mult_125/S2_7_54/S (FA_X1)        0.08       1.12 f
+  u_muldiv/dp_cluster_0/mult_125/S2_8_53/S (FA_X1)        0.08       1.20 r
+  u_muldiv/dp_cluster_0/mult_125/S2_9_52/S (FA_X1)        0.08       1.28 f
+  u_muldiv/dp_cluster_0/mult_125/S2_10_51/S (FA_X1)       0.08       1.36 r
+  u_muldiv/dp_cluster_0/mult_125/S2_11_50/S (FA_X1)       0.08       1.44 f
+  u_muldiv/dp_cluster_0/mult_125/S2_12_49/S (FA_X1)       0.08       1.52 r
+  u_muldiv/dp_cluster_0/mult_125/S2_13_48/S (FA_X1)       0.08       1.59 f
+  u_muldiv/dp_cluster_0/mult_125/S2_14_47/S (FA_X1)       0.08       1.68 r
+  u_muldiv/dp_cluster_0/mult_125/S2_15_46/S (FA_X1)       0.08       1.75 f
+  u_muldiv/dp_cluster_0/mult_125/S2_16_45/S (FA_X1)       0.08       1.84 r
+  u_muldiv/dp_cluster_0/mult_125/S2_17_44/S (FA_X1)       0.08       1.91 f
+  u_muldiv/dp_cluster_0/mult_125/S2_18_43/S (FA_X1)       0.08       1.99 r
+  u_muldiv/dp_cluster_0/mult_125/S2_19_42/S (FA_X1)       0.08       2.07 f
+  u_muldiv/dp_cluster_0/mult_125/S2_20_41/S (FA_X1)       0.08       2.15 r
+  u_muldiv/dp_cluster_0/mult_125/S2_21_40/S (FA_X1)       0.08       2.23 f
+  u_muldiv/dp_cluster_0/mult_125/S2_22_39/S (FA_X1)       0.08       2.31 r
+  u_muldiv/dp_cluster_0/mult_125/S2_23_38/S (FA_X1)       0.07       2.38 f
+  u_muldiv/dp_cluster_0/mult_125/S2_24_37/S (FA_X1)       0.08       2.47 r
+  u_muldiv/dp_cluster_0/mult_125/S2_25_36/S (FA_X1)       0.07       2.54 f
+  u_muldiv/dp_cluster_0/mult_125/S2_26_35/S (FA_X1)       0.08       2.63 r
+  u_muldiv/dp_cluster_0/mult_125/S2_27_34/S (FA_X1)       0.07       2.70 f
+  u_muldiv/dp_cluster_0/mult_125/S2_28_33/S (FA_X1)       0.08       2.78 r
+  u_muldiv/dp_cluster_0/mult_125/S2_29_32/S (FA_X1)       0.07       2.86 f
+  u_muldiv/dp_cluster_0/mult_125/S2_30_31/S (FA_X1)       0.08       2.94 r
+  u_muldiv/dp_cluster_0/mult_125/S2_31_30/S (FA_X1)       0.07       3.02 f
+  u_muldiv/dp_cluster_0/mult_125/S2_32_29/S (FA_X1)       0.08       3.10 r
+  u_muldiv/dp_cluster_0/mult_125/S2_33_28/S (FA_X1)       0.07       3.17 f
+  u_muldiv/dp_cluster_0/mult_125/S2_34_27/S (FA_X1)       0.08       3.26 r
+  u_muldiv/dp_cluster_0/mult_125/S2_35_26/S (FA_X1)       0.07       3.33 f
+  u_muldiv/dp_cluster_0/mult_125/S2_36_25/S (FA_X1)       0.08       3.41 r
+  R_128_i_r_REG3_S4/D (DFFR_X1)                           0.01       3.42 r
+  data arrival time                                                  3.42
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.04       3.46
+  R_128_i_r_REG3_S4/CK (DFFR_X1)                          0.00       3.46 r
+  library setup time                                     -0.02       3.44
+  data required time                                                 3.44
+  --------------------------------------------------------------------------
+  data required time                                                 3.44
+  data arrival time                                                 -3.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1

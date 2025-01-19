@@ -1,0 +1,47 @@
+
+Name of design : riscv_core
+Number of cell instances in the design : 23062
+Number of cell instance masters in the library : 63
+
+Processing power net VSS ...
+Number of power net wires : 18458
+Number of vias : 25723
+Average power dissipation in riscv_core :    10.00 mW
+Power supply voltage :     1.10 V
+Assigning vias begins
+Assigning power net wires ...
+Constructing virtual grid ..
+Performing virtual connection ...
+Reading virtual power pads
+Extracting power net VSS ...
+Number of power pad nodes connecting to power net VSS : 11
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 11
+Number of resistors in VSS : 160098
+Number of nodes in VSS : 147353
+Performing network simulation
+Assigning netlists to simulation engine begins
+Assigning netlists to simulation engine finished
+Maximum IR drop in riscv_core : 24.40 mV
+Maximum current in riscv_core : 0.976 mA
+
+Processing power net VDD ...
+Number of power net wires : 18928
+Number of vias : 26200
+Average power dissipation in riscv_core :    10.00 mW
+Power supply voltage :     1.10 V
+Assigning vias begins
+Assigning power net wires ...
+Constructing virtual grid ..
+Performing virtual connection ...
+Reading virtual power pads
+Extracting power net VDD ...
+Number of power pad nodes connecting to power net VDD : 17
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 17
+Number of resistors in VDD : 165299
+Number of nodes in VDD : 151326
+Performing network simulation
+Assigning netlists to simulation engine begins
+Assigning netlists to simulation engine finished
+Maximum IR drop in riscv_core : 0.25 mV
+Maximum current in riscv_core : 0.712 mA
+Overall takes     6.46 seconds

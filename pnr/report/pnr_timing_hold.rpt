@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : riscv_core
+Version: L-2016.03-SP1
+Date   : Sat Jan  6 21:39:38 2024
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary_ff1p25v0c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 0/0/0
+
+Information: Percent of Arnoldi-based delays = 98.18%
+
+  Startpoint: clk_i_r_REG1639_S35
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: clk_i_r_REG1644_S36
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_i (rise edge)                  0.00       0.00
+  clock network delay (propagated)         0.12       0.12
+  clk_i_r_REG1639_S35/CK (DFFR_X1)         0.00       0.12 r
+  clk_i_r_REG1639_S35/QN (DFFR_X1)         0.04 @     0.16 f
+  clk_i_r_REG1644_S36/D (DFFS_X1)          0.00 @     0.16 f
+  data arrival time                                   0.16
+
+  clock clk_i (rise edge)                  0.00       0.00
+  clock network delay (propagated)         0.12       0.12
+  clock uncertainty                        0.04       0.15
+  clk_i_r_REG1644_S36/CK (DFFS_X1)         0.00       0.15 r
+  library hold time                        0.01       0.16
+  data required time                                  0.16
+  -----------------------------------------------------------
+  data required time                                  0.16
+  data arrival time                                  -0.16
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

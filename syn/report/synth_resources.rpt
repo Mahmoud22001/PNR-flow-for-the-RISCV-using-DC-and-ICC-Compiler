@@ -1,0 +1,103 @@
+ 
+****************************************
+Report : resources
+Design : riscv_core
+Version: K-2015.06
+Date   : Sat Jan  6 03:44:57 2024
+****************************************
+
+Resource Sharing Report 
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| u_exec/r84              |            |               |                      |
+|          | DW01_cmp6    | width=32   |               | u_exec/eq_328        |
+|          |              |            |               | u_exec/eq_334        |
+|          |              |            |               | u_exec/gte_338       |
+|          |              |            |               | u_exec/lt_336        |
+|          |              |            |               | u_exec/ne_330        |
+| u_exec/r93              |            |               |                      |
+|          | DW01_add     | width=32   |               | u_exec/add_314       |
+| u_exec/r95              |            |               |                      |
+|          | DW01_add     | width=32   |               | u_exec/add_319       |
+| u_exec/r97              |            |               |                      |
+|          | DW01_add     | width=32   |               | u_exec/add_324       |
+| u_exec/r99              |            |               |                      |
+|          | DW01_sub     | width=32   |               | u_exec/sub_277_C332  |
+| u_exec/r101             |            |               |                      |
+|          | DW01_sub     | width=32   |               | u_exec/sub_295_C334  |
+| u_mmu/r94               |            |               |                      |
+|          | DW01_add     | width=32   |               | u_mmu/add_242        |
+| u_mmu/r96               |            |               |                      |
+|          | DW01_add     | width=32   |               | u_mmu/add_260        |
+| u_mmu/r98               |            |               |                      |
+|          | DW01_cmp6    | width=20   |               | u_mmu/eq_320         |
+| u_mmu/r100              |            |               |                      |
+|          | DW01_cmp6    | width=20   |               | u_mmu/eq_386         |
+| u_arb/r66               |            |               |                      |
+|          | DW01_cmp2    | width=32   |               | u_arb/gte_115        |
+| u_arb/r68               |            |               |                      |
+|          | DW01_cmp2    | width=32   |               | u_arb/lte_115        |
+| u_lsu/r74               |            |               |                      |
+|          | DW01_add     | width=32   |               | u_lsu/add_136        |
+| u_lsu/r76               |            |               |                      |
+|          | DW01_add     | width=32   |               | u_lsu/add_138        |
+| u_csr/r210              |            |               |                      |
+|          | DW01_cmp2    | width=2    |               | u_csr/lte_1005       |
+|          |              |            |               | u_csr/lte_1015       |
+|          |              |            |               | u_csr/lte_1025       |
+|          |              |            |               | u_csr/lte_319        |
+|          |              |            |               | u_csr/lte_448        |
+|          |              |            |               | u_csr/lte_785        |
+|          |              |            |               | u_csr/lte_996        |
+| u_csr/r211              |            |               |                      |
+|          | DW01_add     | width=32   |               | u_csr/add_350        |
+|          |              |            |               | u_csr/add_417        |
+|          |              |            |               | u_csr/add_473        |
+|          |              |            |               | u_csr/add_520        |
+| u_csr/r212              |            |               |                      |
+|          | DW01_add     | width=4    |               | u_csr/add_804        |
+|          |              |            |               | u_csr/add_828        |
+| u_csr/r217              |            |               |                      |
+|          | DW01_cmp2    | width=2    |               | u_csr/lt_231         |
+| u_csr/r219              |            |               |                      |
+|          | DW01_cmp2    | width=2    |               | u_csr/lt_246         |
+| u_csr/r221              |            |               |                      |
+|          | DW01_inc     | width=32   |               | u_csr/add_282        |
+| u_muldiv/r93            |            |               |                      |
+|          | DW01_sub     | width=32   |               | u_muldiv/sub_186     |
+| u_muldiv/r95            |            |               |                      |
+|          | DW01_sub     | width=32   |               | u_muldiv/sub_191     |
+| u_muldiv/r97            |            |               |                      |
+|          | DW01_cmp2    | width=63   |               | u_muldiv/lte_207     |
+| u_muldiv/r99            |            |               |                      |
+|          | DW01_sub     | width=32   |               | u_muldiv/sub_209     |
+| u_muldiv/r101           |            |               |                      |
+|          | DW01_sub     | width=32   |               | u_muldiv/sub_223     |
+| u_muldiv/r103           |            |               |                      |
+|          | DW01_sub     | width=32   |               | u_muldiv/sub_225     |
+| u_decode/r236           |            |               |                      |
+|          | DW01_add     | width=32   |               | u_decode/add_200     |
+| u_decode/r238           |            |               |                      |
+|          | DW01_cmp6    | width=5    |               | u_decode/eq_354      |
+| u_decode/r240           |            |               |                      |
+|          | DW01_cmp6    | width=5    |               | u_decode/eq_357      |
+| u_decode/r242           |            |               |                      |
+|          | DW01_cmp6    | width=5    |               | u_decode/eq_363      |
+| u_decode/r244           |            |               |                      |
+|          | DW01_cmp6    | width=5    |               | u_decode/eq_366      |
+| u_fetch/r63             |            |               |                      |
+|          | DW01_add     | width=32   |               | u_fetch/add_131      |
+| u_exec/u_alu/r71        |            |               |                      |
+|          | DW01_sub     | width=32   |               | u_exec/u_alu/sub_76  |
+| u_exec/u_alu/r73        |            |               |                      |
+|          | DW01_add     | width=32   |               | u_exec/u_alu/add_155 |
+| u_exec/u_alu/r75        |            |               |                      |
+|          | DW01_cmp2    | width=32   |               | u_exec/u_alu/lt_181  |
+===============================================================================
+
+
+No implementations to report
+1

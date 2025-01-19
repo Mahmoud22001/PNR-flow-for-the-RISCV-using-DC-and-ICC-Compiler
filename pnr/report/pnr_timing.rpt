@@ -1,0 +1,1094 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : riscv_core
+Version: L-2016.03-SP1
+Date   : Sat Jan  6 21:33:31 2024
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary_ff1p25v0c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 0/0/0
+
+Information: Percent of Arnoldi-based delays = 98.18%
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_101 (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.13       0.13
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.13 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.08 @     0.20 r
+  U18/ZN (NAND2_X1)                                       0.06 @     0.27 f
+  U24940/ZN (INV_X1)                                      0.12 @     0.39 r
+  U158/ZN (AND2_X1)                                       0.06 @     0.45 r
+  U291/ZN (NAND2_X1)                                      0.01 @     0.47 f
+  U5820/Z (CLKBUF_X2)                                     0.06 @     0.52 f
+  U2671/ZN (OAI22_X1)                                     0.26 @     0.78 r
+  U23716/ZN (NOR3_X1)                                     0.01 @     0.79 f
+  U153/ZN (AND2_X1)                                       0.02 @     0.81 f
+  U297/ZN (AND3_X1)                                       0.02 @     0.83 f
+  U21800/ZN (NAND2_X1)                                    0.02 @     0.84 r
+  U21801/ZN (NAND2_X1)                                    0.02 @     0.86 f
+  U150/ZN (NAND2_X1)                                      0.01 @     0.87 r
+  U14247/ZN (AND2_X1)                                     0.09 @     0.96 r
+  U18633/Z (CLKBUF_X2)                                    0.12 @     1.08 r
+  U20719/Z (XOR2_X1)                                      0.04 @     1.12 r
+  U20728/ZN (INV_X1)                                      0.01 @     1.13 f
+  U20724/ZN (NAND2_X1)                                    0.01 @     1.14 r
+  U20726/ZN (NAND2_X1)                                    0.02 @     1.16 f
+  U21398/ZN (NAND2_X1)                                    0.01 @     1.17 r
+  U21167/ZN (NAND3_X1)                                    0.02 @     1.19 f
+  U21600/Z (XOR2_X1)                                      0.03 @     1.22 f
+  U21609/ZN (INV_X1)                                      0.01 @     1.23 r
+  U21605/ZN (NAND2_X1)                                    0.01 @     1.24 f
+  U21607/ZN (NAND2_X1)                                    0.02 @     1.26 r
+  U22350/ZN (NAND2_X1)                                    0.01 @     1.27 f
+  U22201/ZN (NAND3_X1)                                    0.01 @     1.29 r
+  U22491/Z (XOR2_X1)                                      0.03 @     1.32 r
+  U22500/ZN (INV_X1)                                      0.01 @     1.33 f
+  U22496/ZN (NAND2_X1)                                    0.01 @     1.34 r
+  U22498/ZN (NAND2_X1)                                    0.02 @     1.35 f
+  U22779/ZN (NAND2_X1)                                    0.01 @     1.37 r
+  U22632/ZN (NAND3_X1)                                    0.02 @     1.39 f
+  U23108/Z (XOR2_X1)                                      0.03 @     1.42 f
+  U23117/ZN (INV_X1)                                      0.01 @     1.43 r
+  U23113/ZN (NAND2_X1)                                    0.01 @     1.44 f
+  U20539/ZN (NAND2_X1)                                    0.01 @     1.45 r
+  U23349/ZN (NAND2_X1)                                    0.01 @     1.47 f
+  U23194/ZN (NAND3_X1)                                    0.01 @     1.48 r
+  U23736/Z (XOR2_X1)                                      0.03 @     1.51 r
+  U23745/ZN (INV_X1)                                      0.01 @     1.52 f
+  U23741/ZN (NAND2_X1)                                    0.01 @     1.53 r
+  U23743/ZN (NAND2_X1)                                    0.01 @     1.54 f
+  u_muldiv_dp_cluster_0_mult_125_S2_11_31/S (FA_X1)       0.06 @     1.60 r
+  u_muldiv_dp_cluster_0_mult_125_S2_12_30/S (FA_X1)       0.06 @     1.66 f
+  u_muldiv_dp_cluster_0_mult_125_S2_13_29/S (FA_X1)       0.07 @     1.73 r
+  u_muldiv_dp_cluster_0_mult_125_S2_14_28/S (FA_X1)       0.06 @     1.78 f
+  u_muldiv_dp_cluster_0_mult_125_S2_15_27/S (FA_X1)       0.07 @     1.85 r
+  u_muldiv_dp_cluster_0_mult_125_S2_16_26/S (FA_X1)       0.06 @     1.91 f
+  u_muldiv_dp_cluster_0_mult_125_S2_17_25/CO (FA_X1)      0.05 @     1.95 f
+  U19006/Z (XOR2_X1)                                      0.03 @     1.99 f
+  U19007/Z (XOR2_X1)                                      0.03 @     2.02 f
+  u_muldiv_dp_cluster_0_mult_125_S2_19_24/CO (FA_X1)      0.04 @     2.06 f
+  U19765/Z (XOR2_X1)                                      0.03 @     2.10 f
+  U19771/ZN (NAND2_X1)                                    0.01 @     2.11 r
+  U19020/ZN (NAND2_X1)                                    0.01 @     2.12 f
+  U19816/ZN (NAND2_X1)                                    0.01 @     2.14 r
+  U1391/ZN (AND3_X1)                                      0.03 @     2.17 r
+  U19877/ZN (NAND2_X1)                                    0.01 @     2.17 f
+  U19878/ZN (NAND2_X1)                                    0.01 @     2.19 r
+  U23379/Z (XOR2_X1)                                      0.04 @     2.23 r
+  U23384/ZN (NAND2_X1)                                    0.02 @     2.25 f
+  U23387/ZN (NAND3_X1)                                    0.01 @     2.26 r
+  U23626/Z (XOR2_X1)                                      0.03 @     2.29 r
+  U23525/ZN (INV_X1)                                      0.01 @     2.30 f
+  U23523/ZN (NAND2_X1)                                    0.01 @     2.31 r
+  U23420/ZN (NAND2_X1)                                    0.02 @     2.33 f
+  U23632/ZN (NAND2_X1)                                    0.01 @     2.34 r
+  U23634/ZN (NAND3_X1)                                    0.02 @     2.36 f
+  u_muldiv_dp_cluster_0_mult_125_S2_26_21/S (FA_X1)       0.07 @     2.43 r
+  u_muldiv_dp_cluster_0_mult_125_S2_27_20/S (FA_X1)       0.07 @     2.50 f
+  U24190/ZN (NAND2_X1)                                    0.01 @     2.51 r
+  U24193/ZN (NAND3_X1)                                    0.02 @     2.53 f
+  U23482/Z (XOR2_X1)                                      0.03 @     2.57 f
+  U23488/ZN (NAND2_X1)                                    0.01 @     2.58 r
+  U23489/ZN (NAND2_X1)                                    0.02 @     2.60 f
+  U24528/ZN (NAND2_X1)                                    0.02 @     2.62 r
+  U1599/ZN (AND3_X1)                                      0.03 @     2.65 r
+  U24401/ZN (NAND2_X1)                                    0.01 @     2.66 f
+  U24403/ZN (NAND2_X1)                                    0.02 @     2.67 r
+  U24430/Z (XOR2_X1)                                      0.03 @     2.70 r
+  U24704/Z (XOR2_X1)                                      0.04 @     2.75 r
+  u_muldiv_dp_cluster_0_mult_125_S2_33_16/S (FA_X1)       0.06 @     2.81 f
+  u_muldiv_dp_cluster_0_mult_125_S2_34_15/S (FA_X1)       0.07 @     2.88 r
+  u_muldiv_dp_cluster_0_mult_125_S2_35_14/S (FA_X1)       0.06 @     2.94 f
+  u_muldiv_dp_cluster_0_mult_125_S2_36_13/S (FA_X1)       0.06 @     3.00 r
+  R_101/D (DFFR_X1)                                       0.00 @     3.00 r
+  data arrival time                                                  3.00
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (propagated)                        0.13       3.63
+  clock uncertainty                                      -0.04       3.59
+  R_101/CK (DFFR_X1)                                      0.00       3.59 r
+  library setup time                                     -0.02       3.57
+  data required time                                                 3.57
+  --------------------------------------------------------------------------
+  data required time                                                 3.57
+  data arrival time                                                 -3.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: clk_i_r_REG357_S33
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.13       0.13
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.13 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.08 @     0.20 r
+  U18/ZN (NAND2_X1)                                       0.06 @     0.27 f
+  U24940/ZN (INV_X1)                                      0.12 @     0.39 r
+  U158/ZN (AND2_X1)                                       0.06 @     0.45 r
+  U291/ZN (NAND2_X1)                                      0.01 @     0.47 f
+  U5820/Z (CLKBUF_X2)                                     0.06 @     0.52 f
+  U2671/ZN (OAI22_X1)                                     0.26 @     0.78 r
+  U23716/ZN (NOR3_X1)                                     0.01 @     0.79 f
+  U153/ZN (AND2_X1)                                       0.02 @     0.81 f
+  U297/ZN (AND3_X1)                                       0.02 @     0.83 f
+  U21800/ZN (NAND2_X1)                                    0.02 @     0.84 r
+  U21801/ZN (NAND2_X1)                                    0.02 @     0.86 f
+  U150/ZN (NAND2_X1)                                      0.01 @     0.87 r
+  U14247/ZN (AND2_X1)                                     0.09 @     0.96 r
+  U18633/Z (CLKBUF_X2)                                    0.12 @     1.08 r
+  U21359/Z (XOR2_X1)                                      0.04 @     1.12 r
+  U21368/ZN (INV_X1)                                      0.01 @     1.13 f
+  U21364/ZN (NAND2_X1)                                    0.01 @     1.14 r
+  U21366/ZN (NAND2_X1)                                    0.02 @     1.15 f
+  U21443/ZN (NAND2_X1)                                    0.01 @     1.17 r
+  U21446/ZN (NAND3_X1)                                    0.03 @     1.19 f
+  U21758/Z (XOR2_X1)                                      0.04 @     1.23 f
+  U21555/ZN (INV_X1)                                      0.01 @     1.24 r
+  U21551/ZN (NAND2_X1)                                    0.01 @     1.25 f
+  U21553/ZN (NAND2_X1)                                    0.01 @     1.26 r
+  u_muldiv_dp_cluster_0_mult_125_S2_5_31/S (FA_X1)        0.06 @     1.32 f
+  u_muldiv_dp_cluster_0_mult_125_S2_6_30/S (FA_X1)        0.07 @     1.39 r
+  U20750/ZN (NAND2_X1)                                    0.01 @     1.40 f
+  U19023/ZN (NAND3_X1)                                    0.01 @     1.42 r
+  U19455/Z (XOR2_X1)                                      0.03 @     1.45 r
+  U19330/ZN (INV_X1)                                      0.01 @     1.46 f
+  U19327/ZN (NAND2_X1)                                    0.01 @     1.47 r
+  U19159/ZN (NAND2_X1)                                    0.01 @     1.48 f
+  U19668/ZN (NAND2_X1)                                    0.01 @     1.49 r
+  U19671/ZN (NAND3_X1)                                    0.02 @     1.51 f
+  u_muldiv_dp_cluster_0_mult_125_S2_10_28/S (FA_X1)       0.07 @     1.58 r
+  u_muldiv_dp_cluster_0_mult_125_S2_11_27/S (FA_X1)       0.06 @     1.64 f
+  u_muldiv_dp_cluster_0_mult_125_S2_12_26/CO (FA_X1)      0.04 @     1.68 f
+  u_muldiv_dp_cluster_0_mult_125_S2_13_26/S (FA_X1)       0.07 @     1.75 r
+  u_muldiv_dp_cluster_0_mult_125_S2_14_25/S (FA_X1)       0.06 @     1.80 f
+  u_muldiv_dp_cluster_0_mult_125_S2_15_24/S (FA_X1)       0.06 @     1.87 r
+  u_muldiv_dp_cluster_0_mult_125_S2_16_23/S (FA_X1)       0.06 @     1.93 f
+  U20322/ZN (NAND2_X1)                                    0.01 @     1.95 r
+  U19973/ZN (NAND3_X1)                                    0.02 @     1.96 f
+  U20279/Z (XOR2_X1)                                      0.03 @     2.00 f
+  U20285/ZN (NAND2_X1)                                    0.01 @     2.01 r
+  U20286/ZN (NAND2_X1)                                    0.02 @     2.03 f
+  U22181/ZN (NAND2_X1)                                    0.01 @     2.04 r
+  U22184/ZN (NAND3_X1)                                    0.02 @     2.06 f
+  U21972/ZN (INV_X1)                                      0.01 @     2.07 r
+  U21970/ZN (NAND2_X1)                                    0.01 @     2.08 f
+  U21971/ZN (NAND2_X1)                                    0.01 @     2.09 r
+  U22177/ZN (INV_X1)                                      0.01 @     2.10 f
+  U22173/ZN (NAND2_X1)                                    0.01 @     2.11 r
+  U22175/ZN (NAND2_X1)                                    0.01 @     2.12 f
+  u_muldiv_dp_cluster_0_mult_125_S2_21_20/S (FA_X1)       0.07 @     2.18 r
+  u_muldiv_dp_cluster_0_mult_125_S2_22_19/S (FA_X1)       0.06 @     2.24 f
+  u_muldiv_dp_cluster_0_mult_125_S2_23_18/S (FA_X1)       0.07 @     2.31 r
+  u_muldiv_dp_cluster_0_mult_125_S2_24_17/S (FA_X1)       0.06 @     2.37 f
+  u_muldiv_dp_cluster_0_mult_125_S2_25_16/CO (FA_X1)      0.04 @     2.41 f
+  u_muldiv_dp_cluster_0_mult_125_S2_26_16/S (FA_X1)       0.07 @     2.48 r
+  u_muldiv_dp_cluster_0_mult_125_S2_27_15/S (FA_X1)       0.06 @     2.54 f
+  u_muldiv_dp_cluster_0_mult_125_S2_28_14/S (FA_X1)       0.07 @     2.61 r
+  U19992/ZN (NAND2_X1)                                    0.01 @     2.62 f
+  U19995/ZN (NAND3_X1)                                    0.02 @     2.64 r
+  U2674/Z (XOR2_X1)                                       0.03 @     2.67 r
+  U2677/Z (XOR2_X1)                                       0.05 @     2.72 r
+  U2967/ZN (NAND2_X1)                                     0.01 @     2.73 f
+  U3015/ZN (NAND3_X1)                                     0.02 @     2.75 r
+  u_muldiv_dp_cluster_0_mult_125_S2_32_12/S (FA_X1)       0.06 @     2.81 f
+  u_muldiv_dp_cluster_0_mult_125_S2_33_11/S (FA_X1)       0.07 @     2.87 r
+  u_muldiv_dp_cluster_0_mult_125_S2_34_10/S (FA_X1)       0.06 @     2.93 f
+  u_muldiv_dp_cluster_0_mult_125_S2_35_9/S (FA_X1)        0.06 @     2.99 r
+  clk_i_r_REG357_S33/D (DFFR_X1)                          0.00 @     2.99 r
+  data arrival time                                                  2.99
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (propagated)                        0.12       3.62
+  clock uncertainty                                      -0.04       3.59
+  clk_i_r_REG357_S33/CK (DFFR_X1)                         0.00       3.59 r
+  library setup time                                     -0.02       3.57
+  data required time                                                 3.57
+  --------------------------------------------------------------------------
+  data required time                                                 3.57
+  data arrival time                                                 -2.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.58
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_95_i_r_REG101_S4
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.13       0.13
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.13 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.08 @     0.20 r
+  U18/ZN (NAND2_X1)                                       0.06 @     0.27 f
+  U24940/ZN (INV_X1)                                      0.12 @     0.39 r
+  U158/ZN (AND2_X1)                                       0.06 @     0.45 r
+  U291/ZN (NAND2_X1)                                      0.01 @     0.47 f
+  U5820/Z (CLKBUF_X2)                                     0.06 @     0.52 f
+  U2671/ZN (OAI22_X1)                                     0.26 @     0.78 r
+  U23716/ZN (NOR3_X1)                                     0.01 @     0.79 f
+  U153/ZN (AND2_X1)                                       0.02 @     0.81 f
+  U297/ZN (AND3_X1)                                       0.02 @     0.83 f
+  U21800/ZN (NAND2_X1)                                    0.02 @     0.84 r
+  U21801/ZN (NAND2_X1)                                    0.02 @     0.86 f
+  U150/ZN (NAND2_X1)                                      0.01 @     0.87 r
+  U14247/ZN (AND2_X1)                                     0.09 @     0.96 r
+  U18633/Z (CLKBUF_X2)                                    0.12 @     1.08 r
+  U20719/Z (XOR2_X1)                                      0.04 @     1.12 r
+  U20728/ZN (INV_X1)                                      0.01 @     1.13 f
+  U20724/ZN (NAND2_X1)                                    0.01 @     1.14 r
+  U20726/ZN (NAND2_X1)                                    0.02 @     1.16 f
+  U21398/ZN (NAND2_X1)                                    0.01 @     1.17 r
+  U21167/ZN (NAND3_X1)                                    0.02 @     1.19 f
+  U21600/Z (XOR2_X1)                                      0.03 @     1.22 f
+  U21609/ZN (INV_X1)                                      0.01 @     1.23 r
+  U21605/ZN (NAND2_X1)                                    0.01 @     1.24 f
+  U21607/ZN (NAND2_X1)                                    0.02 @     1.26 r
+  U22350/ZN (NAND2_X1)                                    0.01 @     1.27 f
+  U22201/ZN (NAND3_X1)                                    0.01 @     1.29 r
+  U22491/Z (XOR2_X1)                                      0.03 @     1.32 r
+  U22500/ZN (INV_X1)                                      0.01 @     1.33 f
+  U22496/ZN (NAND2_X1)                                    0.01 @     1.34 r
+  U22498/ZN (NAND2_X1)                                    0.02 @     1.35 f
+  U22779/ZN (NAND2_X1)                                    0.01 @     1.37 r
+  U22632/ZN (NAND3_X1)                                    0.02 @     1.39 f
+  U23108/Z (XOR2_X1)                                      0.03 @     1.42 f
+  U23117/ZN (INV_X1)                                      0.01 @     1.43 r
+  U23113/ZN (NAND2_X1)                                    0.01 @     1.44 f
+  U20539/ZN (NAND2_X1)                                    0.01 @     1.45 r
+  U23349/ZN (NAND2_X1)                                    0.01 @     1.47 f
+  U23194/ZN (NAND3_X1)                                    0.01 @     1.48 r
+  U23736/Z (XOR2_X1)                                      0.03 @     1.51 r
+  U23745/ZN (INV_X1)                                      0.01 @     1.52 f
+  U23741/ZN (NAND2_X1)                                    0.01 @     1.53 r
+  U23743/ZN (NAND2_X1)                                    0.01 @     1.54 f
+  u_muldiv_dp_cluster_0_mult_125_S2_11_31/S (FA_X1)       0.06 @     1.60 r
+  u_muldiv_dp_cluster_0_mult_125_S2_12_30/S (FA_X1)       0.06 @     1.66 f
+  u_muldiv_dp_cluster_0_mult_125_S2_13_29/S (FA_X1)       0.07 @     1.73 r
+  u_muldiv_dp_cluster_0_mult_125_S2_14_28/S (FA_X1)       0.06 @     1.78 f
+  u_muldiv_dp_cluster_0_mult_125_S2_15_27/S (FA_X1)       0.07 @     1.85 r
+  u_muldiv_dp_cluster_0_mult_125_S2_16_26/S (FA_X1)       0.06 @     1.91 f
+  u_muldiv_dp_cluster_0_mult_125_S2_17_25/CO (FA_X1)      0.05 @     1.95 f
+  U19006/Z (XOR2_X1)                                      0.03 @     1.99 f
+  U19007/Z (XOR2_X1)                                      0.03 @     2.02 f
+  u_muldiv_dp_cluster_0_mult_125_S2_19_24/CO (FA_X1)      0.04 @     2.06 f
+  U19765/Z (XOR2_X1)                                      0.03 @     2.10 f
+  U19771/ZN (NAND2_X1)                                    0.01 @     2.11 r
+  U19020/ZN (NAND2_X1)                                    0.01 @     2.12 f
+  U19816/ZN (NAND2_X1)                                    0.01 @     2.14 r
+  U1391/ZN (AND3_X1)                                      0.03 @     2.17 r
+  U19877/ZN (NAND2_X1)                                    0.01 @     2.17 f
+  U19878/ZN (NAND2_X1)                                    0.01 @     2.19 r
+  U23379/Z (XOR2_X1)                                      0.04 @     2.23 r
+  U23384/ZN (NAND2_X1)                                    0.02 @     2.25 f
+  U23387/ZN (NAND3_X1)                                    0.01 @     2.26 r
+  U23626/Z (XOR2_X1)                                      0.03 @     2.29 r
+  U23525/ZN (INV_X1)                                      0.01 @     2.30 f
+  U23523/ZN (NAND2_X1)                                    0.01 @     2.31 r
+  U23420/ZN (NAND2_X1)                                    0.02 @     2.33 f
+  U23632/ZN (NAND2_X1)                                    0.01 @     2.34 r
+  U23634/ZN (NAND3_X1)                                    0.02 @     2.36 f
+  u_muldiv_dp_cluster_0_mult_125_S2_26_21/CO (FA_X1)      0.04 @     2.41 f
+  u_muldiv_dp_cluster_0_mult_125_S2_27_21/CO (FA_X1)      0.04 @     2.45 f
+  u_muldiv_dp_cluster_0_mult_125_S2_28_21/S (FA_X1)       0.07 @     2.52 r
+  u_muldiv_dp_cluster_0_mult_125_S2_29_20/S (FA_X1)       0.06 @     2.58 f
+  u_muldiv_dp_cluster_0_mult_125_S2_30_19/CO (FA_X1)      0.05 @     2.63 f
+  U24086/ZN (INV_X1)                                      0.01 @     2.64 r
+  U24084/ZN (NAND2_X1)                                    0.01 @     2.65 f
+  U24085/ZN (NAND2_X1)                                    0.01 @     2.66 r
+  U24659/ZN (INV_X1)                                      0.01 @     2.66 f
+  U24655/ZN (NAND2_X1)                                    0.01 @     2.67 r
+  U24657/ZN (NAND2_X1)                                    0.01 @     2.69 f
+  u_muldiv_dp_cluster_0_mult_125_S2_32_18/CO (FA_X1)      0.04 @     2.73 f
+  U24724/Z (XOR2_X1)                                      0.03 @     2.77 f
+  U24578/ZN (NAND2_X1)                                    0.01 @     2.78 r
+  U24580/ZN (NAND2_X1)                                    0.02 @     2.80 f
+  u_muldiv_dp_cluster_0_mult_125_S2_34_17/S (FA_X1)       0.07 @     2.87 r
+  u_muldiv_dp_cluster_0_mult_125_S2_35_16/S (FA_X1)       0.06 @     2.93 f
+  u_muldiv_dp_cluster_0_mult_125_S2_36_15/S (FA_X1)       0.06 @     2.99 r
+  R_95_i_r_REG101_S4/D (DFFR_X1)                          0.00 @     2.99 r
+  data arrival time                                                  2.99
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (propagated)                        0.13       3.63
+  clock uncertainty                                      -0.04       3.59
+  R_95_i_r_REG101_S4/CK (DFFR_X1)                         0.00       3.59 r
+  library setup time                                     -0.02       3.57
+  data required time                                                 3.57
+  --------------------------------------------------------------------------
+  data required time                                                 3.57
+  data arrival time                                                 -2.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.58
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_131_i_r_REG189_S33
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.13       0.13
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.13 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.08 @     0.20 r
+  U18/ZN (NAND2_X1)                                       0.06 @     0.27 f
+  U24940/ZN (INV_X1)                                      0.12 @     0.39 r
+  U158/ZN (AND2_X1)                                       0.06 @     0.45 r
+  U291/ZN (NAND2_X1)                                      0.01 @     0.47 f
+  U5820/Z (CLKBUF_X2)                                     0.06 @     0.52 f
+  U2671/ZN (OAI22_X1)                                     0.26 @     0.78 r
+  U23716/ZN (NOR3_X1)                                     0.01 @     0.79 f
+  U153/ZN (AND2_X1)                                       0.02 @     0.81 f
+  U297/ZN (AND3_X1)                                       0.02 @     0.83 f
+  U21800/ZN (NAND2_X1)                                    0.02 @     0.84 r
+  U21801/ZN (NAND2_X1)                                    0.02 @     0.86 f
+  U150/ZN (NAND2_X1)                                      0.01 @     0.87 r
+  U14247/ZN (AND2_X1)                                     0.09 @     0.96 r
+  U18633/Z (CLKBUF_X2)                                    0.12 @     1.08 r
+  U21359/Z (XOR2_X1)                                      0.04 @     1.12 r
+  U21368/ZN (INV_X1)                                      0.01 @     1.13 f
+  U21364/ZN (NAND2_X1)                                    0.01 @     1.14 r
+  U21366/ZN (NAND2_X1)                                    0.02 @     1.15 f
+  U21443/ZN (NAND2_X1)                                    0.01 @     1.17 r
+  U21446/ZN (NAND3_X1)                                    0.03 @     1.19 f
+  U21758/Z (XOR2_X1)                                      0.04 @     1.23 f
+  U21555/ZN (INV_X1)                                      0.01 @     1.24 r
+  U21551/ZN (NAND2_X1)                                    0.01 @     1.25 f
+  U21553/ZN (NAND2_X1)                                    0.01 @     1.26 r
+  u_muldiv_dp_cluster_0_mult_125_S2_5_31/S (FA_X1)        0.06 @     1.32 f
+  u_muldiv_dp_cluster_0_mult_125_S2_6_30/S (FA_X1)        0.07 @     1.39 r
+  U20750/ZN (NAND2_X1)                                    0.01 @     1.40 f
+  U19023/ZN (NAND3_X1)                                    0.01 @     1.42 r
+  U19455/Z (XOR2_X1)                                      0.03 @     1.45 r
+  U19330/ZN (INV_X1)                                      0.01 @     1.46 f
+  U19327/ZN (NAND2_X1)                                    0.01 @     1.47 r
+  U19159/ZN (NAND2_X1)                                    0.01 @     1.48 f
+  U19668/ZN (NAND2_X1)                                    0.01 @     1.49 r
+  U19671/ZN (NAND3_X1)                                    0.02 @     1.51 f
+  u_muldiv_dp_cluster_0_mult_125_S2_10_28/S (FA_X1)       0.07 @     1.58 r
+  u_muldiv_dp_cluster_0_mult_125_S2_11_27/S (FA_X1)       0.06 @     1.64 f
+  u_muldiv_dp_cluster_0_mult_125_S2_12_26/CO (FA_X1)      0.04 @     1.68 f
+  u_muldiv_dp_cluster_0_mult_125_S2_13_26/S (FA_X1)       0.07 @     1.75 r
+  u_muldiv_dp_cluster_0_mult_125_S2_14_25/S (FA_X1)       0.06 @     1.80 f
+  u_muldiv_dp_cluster_0_mult_125_S2_15_24/S (FA_X1)       0.06 @     1.87 r
+  u_muldiv_dp_cluster_0_mult_125_S2_16_23/S (FA_X1)       0.06 @     1.93 f
+  U20322/ZN (NAND2_X1)                                    0.01 @     1.95 r
+  U19973/ZN (NAND3_X1)                                    0.02 @     1.96 f
+  U20279/Z (XOR2_X1)                                      0.03 @     2.00 f
+  U20288/ZN (INV_X1)                                      0.01 @     2.00 r
+  U20284/ZN (NAND2_X1)                                    0.01 @     2.01 f
+  U20286/ZN (NAND2_X1)                                    0.02 @     2.03 r
+  U22181/ZN (NAND2_X1)                                    0.01 @     2.05 f
+  U22184/ZN (NAND3_X1)                                    0.01 @     2.06 r
+  U21972/ZN (INV_X1)                                      0.01 @     2.07 f
+  U21970/ZN (NAND2_X1)                                    0.01 @     2.07 r
+  U21971/ZN (NAND2_X1)                                    0.01 @     2.09 f
+  U22177/ZN (INV_X1)                                      0.01 @     2.09 r
+  U22173/ZN (NAND2_X1)                                    0.01 @     2.10 f
+  U22175/ZN (NAND2_X1)                                    0.01 @     2.12 r
+  u_muldiv_dp_cluster_0_mult_125_S2_21_20/S (FA_X1)       0.06 @     2.17 f
+  u_muldiv_dp_cluster_0_mult_125_S2_22_19/S (FA_X1)       0.07 @     2.24 r
+  u_muldiv_dp_cluster_0_mult_125_S2_23_18/S (FA_X1)       0.06 @     2.30 f
+  u_muldiv_dp_cluster_0_mult_125_S2_24_17/S (FA_X1)       0.07 @     2.37 r
+  u_muldiv_dp_cluster_0_mult_125_S2_25_16/S (FA_X1)       0.06 @     2.42 f
+  u_muldiv_dp_cluster_0_mult_125_S2_26_15/CO (FA_X1)      0.04 @     2.46 f
+  u_muldiv_dp_cluster_0_mult_125_S2_27_15/CO (FA_X1)      0.05 @     2.51 f
+  u_muldiv_dp_cluster_0_mult_125_S2_28_15/S (FA_X1)       0.07 @     2.58 r
+  u_muldiv_dp_cluster_0_mult_125_S2_29_14/S (FA_X1)       0.06 @     2.64 f
+  U2684/ZN (NAND2_X1)                                     0.01 @     2.65 r
+  U2885/ZN (NAND3_X1)                                     0.03 @     2.69 f
+  U24157/Z (XOR2_X1)                                      0.04 @     2.72 f
+  U24163/ZN (NAND2_X1)                                    0.01 @     2.74 r
+  U24164/ZN (NAND2_X1)                                    0.01 @     2.75 f
+  u_muldiv_dp_cluster_0_mult_125_S2_32_12/CO (FA_X1)      0.04 @     2.79 f
+  u_muldiv_dp_cluster_0_mult_125_S2_33_12/S (FA_X1)       0.07 @     2.86 r
+  u_muldiv_dp_cluster_0_mult_125_S2_34_11/S (FA_X1)       0.06 @     2.92 f
+  u_muldiv_dp_cluster_0_mult_125_S2_35_10/S (FA_X1)       0.06 @     2.98 r
+  R_131_i_r_REG189_S33/D (DFFR_X1)                        0.00 @     2.98 r
+  data arrival time                                                  2.98
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (propagated)                        0.12       3.62
+  clock uncertainty                                      -0.04       3.59
+  R_131_i_r_REG189_S33/CK (DFFR_X1)                       0.00       3.59 r
+  library setup time                                     -0.02       3.56
+  data required time                                                 3.56
+  --------------------------------------------------------------------------
+  data required time                                                 3.56
+  data arrival time                                                 -2.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.58
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_104_i_r_REG48_S19
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.13       0.13
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.13 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.08 @     0.20 r
+  U18/ZN (NAND2_X1)                                       0.06 @     0.27 f
+  U24940/ZN (INV_X1)                                      0.12 @     0.39 r
+  U158/ZN (AND2_X1)                                       0.06 @     0.45 r
+  U291/ZN (NAND2_X1)                                      0.01 @     0.47 f
+  U5820/Z (CLKBUF_X2)                                     0.06 @     0.52 f
+  U2671/ZN (OAI22_X1)                                     0.26 @     0.78 r
+  U23716/ZN (NOR3_X1)                                     0.01 @     0.79 f
+  U153/ZN (AND2_X1)                                       0.02 @     0.81 f
+  U297/ZN (AND3_X1)                                       0.02 @     0.83 f
+  U21800/ZN (NAND2_X1)                                    0.02 @     0.84 r
+  U21801/ZN (NAND2_X1)                                    0.02 @     0.86 f
+  U150/ZN (NAND2_X1)                                      0.01 @     0.87 r
+  U14247/ZN (AND2_X1)                                     0.09 @     0.96 r
+  U18633/Z (CLKBUF_X2)                                    0.12 @     1.08 r
+  u_muldiv_dp_cluster_0_mult_125_S2_2_44/S (FA_X1)        0.09 @     1.17 f
+  U19102/ZN (NAND2_X1)                                    0.01 @     1.18 r
+  U19104/ZN (NAND3_X1)                                    0.02 @     1.20 f
+  U19306/Z (XOR2_X1)                                      0.03 @     1.23 f
+  U19307/Z (XOR2_X1)                                      0.04 @     1.27 f
+  u_muldiv_dp_cluster_0_mult_125_S2_5_42/S (FA_X1)        0.06 @     1.33 r
+  u_muldiv_dp_cluster_0_mult_125_S2_6_41/CO (FA_X1)       0.04 @     1.37 r
+  U21637/Z (XOR2_X1)                                      0.03 @     1.40 r
+  U21638/Z (XOR2_X1)                                      0.03 @     1.43 r
+  u_muldiv_dp_cluster_0_mult_125_S2_8_40/S (FA_X1)        0.06 @     1.49 f
+  u_muldiv_dp_cluster_0_mult_125_S2_9_39/S (FA_X1)        0.07 @     1.56 r
+  u_muldiv_dp_cluster_0_mult_125_S2_10_38/S (FA_X1)       0.06 @     1.61 f
+  u_muldiv_dp_cluster_0_mult_125_S2_11_37/S (FA_X1)       0.07 @     1.68 r
+  u_muldiv_dp_cluster_0_mult_125_S2_12_36/S (FA_X1)       0.06 @     1.73 f
+  u_muldiv_dp_cluster_0_mult_125_S2_13_35/CO (FA_X1)      0.04 @     1.78 f
+  U22124/Z (XOR2_X1)                                      0.03 @     1.81 f
+  U22133/ZN (INV_X1)                                      0.01 @     1.82 r
+  U22129/ZN (NAND2_X1)                                    0.01 @     1.84 f
+  U21676/ZN (NAND2_X1)                                    0.01 @     1.85 r
+  U22327/ZN (NAND2_X1)                                    0.01 @     1.86 f
+  U22290/ZN (NAND3_X1)                                    0.01 @     1.88 r
+  U22485/Z (XOR2_X1)                                      0.03 @     1.90 r
+  U22486/Z (XOR2_X1)                                      0.03 @     1.94 r
+  u_muldiv_dp_cluster_0_mult_125_S2_17_33/S (FA_X1)       0.06 @     2.00 f
+  u_muldiv_dp_cluster_0_mult_125_S2_18_32/S (FA_X1)       0.07 @     2.07 r
+  U23529/ZN (NAND2_X1)                                    0.01 @     2.08 f
+  U23167/ZN (NAND3_X1)                                    0.01 @     2.09 r
+  U23451/Z (XOR2_X1)                                      0.03 @     2.12 r
+  U23452/Z (XOR2_X1)                                      0.04 @     2.16 r
+  U24257/ZN (NAND2_X1)                                    0.02 @     2.18 f
+  U24258/ZN (NAND3_X1)                                    0.01 @     2.19 r
+  U23510/Z (XOR2_X1)                                      0.03 @     2.22 r
+  U23511/Z (XOR2_X1)                                      0.04 @     2.27 r
+  U23723/ZN (NAND2_X1)                                    0.02 @     2.28 f
+  U23548/ZN (NAND3_X1)                                    0.01 @     2.30 r
+  U23636/Z (XOR2_X1)                                      0.03 @     2.33 r
+  U23645/ZN (INV_X1)                                      0.01 @     2.34 f
+  U23641/ZN (NAND2_X1)                                    0.01 @     2.35 r
+  U23643/ZN (NAND2_X1)                                    0.01 @     2.36 f
+  U24051/ZN (INV_X1)                                      0.01 @     2.37 r
+  U24049/ZN (NAND2_X1)                                    0.01 @     2.38 f
+  U24050/ZN (NAND2_X1)                                    0.01 @     2.40 r
+  U24366/ZN (INV_X1)                                      0.01 @     2.40 f
+  U24364/ZN (NAND2_X1)                                    0.01 @     2.41 r
+  U24365/ZN (NAND2_X1)                                    0.01 @     2.42 f
+  u_muldiv_dp_cluster_0_mult_125_S2_27_26/S (FA_X1)       0.07 @     2.49 r
+  U20225/ZN (INV_X1)                                      0.01 @     2.50 f
+  U20223/ZN (NAND2_X1)                                    0.01 @     2.51 r
+  U20224/ZN (NAND2_X1)                                    0.02 @     2.53 f
+  U20413/ZN (NAND2_X1)                                    0.01 @     2.54 r
+  U20274/ZN (NAND3_X1)                                    0.02 @     2.56 f
+  U20732/Z (XOR2_X1)                                      0.03 @     2.59 f
+  U20738/ZN (NAND2_X1)                                    0.02 @     2.61 r
+  U1593/ZN (AND2_X1)                                      0.03 @     2.63 r
+  U22907/ZN (NAND3_X1)                                    0.01 @     2.64 f
+  U1596/ZN (AND2_X1)                                      0.02 @     2.66 f
+  U23026/ZN (NAND2_X1)                                    0.01 @     2.68 r
+  u_muldiv_dp_cluster_0_mult_125_S2_32_22/S (FA_X1)       0.06 @     2.73 f
+  u_muldiv_dp_cluster_0_mult_125_S2_33_21/CO (FA_X1)      0.04 @     2.77 f
+  u_muldiv_dp_cluster_0_mult_125_S2_34_21/S (FA_X1)       0.07 @     2.84 r
+  u_muldiv_dp_cluster_0_mult_125_S2_35_20/S (FA_X1)       0.06 @     2.90 f
+  u_muldiv_dp_cluster_0_mult_125_S2_36_19/S (FA_X1)       0.07 @     2.97 r
+  R_104_i_r_REG48_S19/D (DFFR_X1)                         0.00 @     2.97 r
+  data arrival time                                                  2.97
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (propagated)                        0.13       3.63
+  clock uncertainty                                      -0.04       3.59
+  R_104_i_r_REG48_S19/CK (DFFR_X1)                        0.00       3.59 r
+  library setup time                                     -0.02       3.57
+  data required time                                                 3.57
+  --------------------------------------------------------------------------
+  data required time                                                 3.57
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_98_i_r_REG77_S19
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.13       0.13
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.13 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.08 @     0.20 r
+  U18/ZN (NAND2_X1)                                       0.06 @     0.27 f
+  U24940/ZN (INV_X1)                                      0.12 @     0.39 r
+  U158/ZN (AND2_X1)                                       0.06 @     0.45 r
+  U291/ZN (NAND2_X1)                                      0.01 @     0.47 f
+  U5820/Z (CLKBUF_X2)                                     0.06 @     0.52 f
+  U2671/ZN (OAI22_X1)                                     0.26 @     0.78 r
+  U23716/ZN (NOR3_X1)                                     0.01 @     0.79 f
+  U153/ZN (AND2_X1)                                       0.02 @     0.81 f
+  U297/ZN (AND3_X1)                                       0.02 @     0.83 f
+  U21800/ZN (NAND2_X1)                                    0.02 @     0.84 r
+  U21801/ZN (NAND2_X1)                                    0.02 @     0.86 f
+  U150/ZN (NAND2_X1)                                      0.01 @     0.87 r
+  U14247/ZN (AND2_X1)                                     0.09 @     0.96 r
+  U18633/Z (CLKBUF_X2)                                    0.12 @     1.08 r
+  u_muldiv_dp_cluster_0_mult_125_S2_2_44/S (FA_X1)        0.09 @     1.17 f
+  U19102/ZN (NAND2_X1)                                    0.01 @     1.18 r
+  U19104/ZN (NAND3_X1)                                    0.02 @     1.20 f
+  U19306/Z (XOR2_X1)                                      0.03 @     1.23 f
+  U19307/Z (XOR2_X1)                                      0.04 @     1.27 f
+  u_muldiv_dp_cluster_0_mult_125_S2_5_42/S (FA_X1)        0.06 @     1.33 r
+  u_muldiv_dp_cluster_0_mult_125_S2_6_41/CO (FA_X1)       0.04 @     1.37 r
+  U21637/Z (XOR2_X1)                                      0.03 @     1.40 r
+  U21638/Z (XOR2_X1)                                      0.03 @     1.43 r
+  u_muldiv_dp_cluster_0_mult_125_S2_8_40/S (FA_X1)        0.06 @     1.49 f
+  u_muldiv_dp_cluster_0_mult_125_S2_9_39/S (FA_X1)        0.07 @     1.56 r
+  u_muldiv_dp_cluster_0_mult_125_S2_10_38/S (FA_X1)       0.06 @     1.61 f
+  u_muldiv_dp_cluster_0_mult_125_S2_11_37/S (FA_X1)       0.07 @     1.68 r
+  u_muldiv_dp_cluster_0_mult_125_S2_12_36/S (FA_X1)       0.06 @     1.73 f
+  u_muldiv_dp_cluster_0_mult_125_S2_13_35/CO (FA_X1)      0.04 @     1.78 f
+  U22124/Z (XOR2_X1)                                      0.03 @     1.81 f
+  U22133/ZN (INV_X1)                                      0.01 @     1.82 r
+  U22129/ZN (NAND2_X1)                                    0.01 @     1.84 f
+  U21676/ZN (NAND2_X1)                                    0.01 @     1.85 r
+  U22327/ZN (NAND2_X1)                                    0.01 @     1.86 f
+  U22290/ZN (NAND3_X1)                                    0.01 @     1.88 r
+  U22485/Z (XOR2_X1)                                      0.03 @     1.90 r
+  U22486/Z (XOR2_X1)                                      0.03 @     1.94 r
+  u_muldiv_dp_cluster_0_mult_125_S2_17_33/S (FA_X1)       0.06 @     2.00 f
+  u_muldiv_dp_cluster_0_mult_125_S2_18_32/S (FA_X1)       0.07 @     2.07 r
+  U23529/ZN (NAND2_X1)                                    0.01 @     2.08 f
+  U23167/ZN (NAND3_X1)                                    0.01 @     2.09 r
+  U23451/Z (XOR2_X1)                                      0.03 @     2.12 r
+  U23452/Z (XOR2_X1)                                      0.04 @     2.16 r
+  U24257/ZN (NAND2_X1)                                    0.02 @     2.18 f
+  U24258/ZN (NAND3_X1)                                    0.01 @     2.19 r
+  U23510/Z (XOR2_X1)                                      0.03 @     2.22 r
+  U23511/Z (XOR2_X1)                                      0.04 @     2.27 r
+  U23723/ZN (NAND2_X1)                                    0.02 @     2.28 f
+  U23548/ZN (NAND3_X1)                                    0.01 @     2.30 r
+  U23636/Z (XOR2_X1)                                      0.03 @     2.33 r
+  U23645/ZN (INV_X1)                                      0.01 @     2.34 f
+  U23641/ZN (NAND2_X1)                                    0.01 @     2.35 r
+  U23643/ZN (NAND2_X1)                                    0.01 @     2.36 f
+  U24051/ZN (INV_X1)                                      0.01 @     2.37 r
+  U24049/ZN (NAND2_X1)                                    0.01 @     2.38 f
+  U24050/ZN (NAND2_X1)                                    0.01 @     2.40 r
+  U24366/ZN (INV_X1)                                      0.01 @     2.40 f
+  U24364/ZN (NAND2_X1)                                    0.01 @     2.41 r
+  U24365/ZN (NAND2_X1)                                    0.01 @     2.42 f
+  u_muldiv_dp_cluster_0_mult_125_S2_27_26/S (FA_X1)       0.07 @     2.49 r
+  U20218/ZN (NAND2_X1)                                    0.01 @     2.51 f
+  U19425/ZN (NAND3_X1)                                    0.01 @     2.52 r
+  U19607/Z (XOR2_X1)                                      0.03 @     2.55 r
+  U19616/ZN (INV_X1)                                      0.01 @     2.56 f
+  U19612/ZN (NAND2_X1)                                    0.01 @     2.57 r
+  U19614/ZN (NAND2_X1)                                    0.02 @     2.59 f
+  U20740/ZN (INV_X1)                                      0.01 @     2.60 r
+  U20738/ZN (NAND2_X1)                                    0.01 @     2.61 f
+  U1593/ZN (AND2_X1)                                      0.02 @     2.63 f
+  U22907/ZN (NAND3_X1)                                    0.01 @     2.64 r
+  U1596/ZN (AND2_X1)                                      0.02 @     2.67 r
+  U23026/ZN (NAND2_X1)                                    0.01 @     2.68 f
+  u_muldiv_dp_cluster_0_mult_125_S2_32_22/S (FA_X1)       0.07 @     2.74 r
+  u_muldiv_dp_cluster_0_mult_125_S2_33_21/S (FA_X1)       0.06 @     2.81 f
+  U20868/ZN (INV_X1)                                      0.01 @     2.82 r
+  U20866/ZN (NAND2_X1)                                    0.01 @     2.83 f
+  U20867/ZN (NAND2_X1)                                    0.02 @     2.84 r
+  u_muldiv_dp_cluster_0_mult_125_S2_35_19/S (FA_X1)       0.06 @     2.90 f
+  u_muldiv_dp_cluster_0_mult_125_S2_36_18/S (FA_X1)       0.06 @     2.97 r
+  R_98_i_r_REG77_S19/D (DFFR_X1)                          0.00 @     2.97 r
+  data arrival time                                                  2.97
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (propagated)                        0.13       3.63
+  clock uncertainty                                      -0.04       3.59
+  R_98_i_r_REG77_S19/CK (DFFR_X1)                         0.00       3.59 r
+  library setup time                                     -0.02       3.57
+  data required time                                                 3.57
+  --------------------------------------------------------------------------
+  data required time                                                 3.57
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_82_i_r_REG97_S4
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.13       0.13
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.13 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.08 @     0.20 r
+  U18/ZN (NAND2_X1)                                       0.06 @     0.27 f
+  U24940/ZN (INV_X1)                                      0.12 @     0.39 r
+  U158/ZN (AND2_X1)                                       0.06 @     0.45 r
+  U291/ZN (NAND2_X1)                                      0.01 @     0.47 f
+  U5820/Z (CLKBUF_X2)                                     0.06 @     0.52 f
+  U2671/ZN (OAI22_X1)                                     0.26 @     0.78 r
+  U23716/ZN (NOR3_X1)                                     0.01 @     0.79 f
+  U153/ZN (AND2_X1)                                       0.02 @     0.81 f
+  U297/ZN (AND3_X1)                                       0.02 @     0.83 f
+  U21800/ZN (NAND2_X1)                                    0.02 @     0.84 r
+  U21801/ZN (NAND2_X1)                                    0.02 @     0.86 f
+  U150/ZN (NAND2_X1)                                      0.01 @     0.87 r
+  U14247/ZN (AND2_X1)                                     0.09 @     0.96 r
+  U18633/Z (CLKBUF_X2)                                    0.12 @     1.08 r
+  U20719/Z (XOR2_X1)                                      0.04 @     1.12 r
+  U20728/ZN (INV_X1)                                      0.01 @     1.13 f
+  U20724/ZN (NAND2_X1)                                    0.01 @     1.14 r
+  U20726/ZN (NAND2_X1)                                    0.02 @     1.16 f
+  U21398/ZN (NAND2_X1)                                    0.01 @     1.17 r
+  U21167/ZN (NAND3_X1)                                    0.02 @     1.19 f
+  U21600/Z (XOR2_X1)                                      0.03 @     1.22 f
+  U21609/ZN (INV_X1)                                      0.01 @     1.23 r
+  U21605/ZN (NAND2_X1)                                    0.01 @     1.24 f
+  U21607/ZN (NAND2_X1)                                    0.02 @     1.26 r
+  U22350/ZN (NAND2_X1)                                    0.01 @     1.27 f
+  U22201/ZN (NAND3_X1)                                    0.01 @     1.29 r
+  U22491/Z (XOR2_X1)                                      0.03 @     1.32 r
+  U22500/ZN (INV_X1)                                      0.01 @     1.33 f
+  U22496/ZN (NAND2_X1)                                    0.01 @     1.34 r
+  U22498/ZN (NAND2_X1)                                    0.02 @     1.35 f
+  U22779/ZN (NAND2_X1)                                    0.01 @     1.37 r
+  U22632/ZN (NAND3_X1)                                    0.02 @     1.39 f
+  U23108/Z (XOR2_X1)                                      0.03 @     1.42 f
+  U23117/ZN (INV_X1)                                      0.01 @     1.43 r
+  U23113/ZN (NAND2_X1)                                    0.01 @     1.44 f
+  U20539/ZN (NAND2_X1)                                    0.01 @     1.45 r
+  U23349/ZN (NAND2_X1)                                    0.01 @     1.47 f
+  U23194/ZN (NAND3_X1)                                    0.01 @     1.48 r
+  U23736/Z (XOR2_X1)                                      0.03 @     1.51 r
+  U23745/ZN (INV_X1)                                      0.01 @     1.52 f
+  U23741/ZN (NAND2_X1)                                    0.01 @     1.53 r
+  U23743/ZN (NAND2_X1)                                    0.01 @     1.54 f
+  u_muldiv_dp_cluster_0_mult_125_S2_11_31/S (FA_X1)       0.06 @     1.60 r
+  u_muldiv_dp_cluster_0_mult_125_S2_12_30/S (FA_X1)       0.06 @     1.66 f
+  u_muldiv_dp_cluster_0_mult_125_S2_13_29/S (FA_X1)       0.07 @     1.73 r
+  u_muldiv_dp_cluster_0_mult_125_S2_14_28/S (FA_X1)       0.06 @     1.78 f
+  u_muldiv_dp_cluster_0_mult_125_S2_15_27/S (FA_X1)       0.07 @     1.85 r
+  u_muldiv_dp_cluster_0_mult_125_S2_16_26/S (FA_X1)       0.06 @     1.91 f
+  u_muldiv_dp_cluster_0_mult_125_S2_17_25/CO (FA_X1)      0.05 @     1.95 f
+  U19006/Z (XOR2_X1)                                      0.03 @     1.99 f
+  U19007/Z (XOR2_X1)                                      0.03 @     2.02 f
+  u_muldiv_dp_cluster_0_mult_125_S2_19_24/CO (FA_X1)      0.04 @     2.06 f
+  U19765/Z (XOR2_X1)                                      0.03 @     2.10 f
+  U19771/ZN (NAND2_X1)                                    0.01 @     2.11 r
+  U19020/ZN (NAND2_X1)                                    0.01 @     2.12 f
+  U19816/ZN (NAND2_X1)                                    0.01 @     2.14 r
+  U1391/ZN (AND3_X1)                                      0.03 @     2.17 r
+  U19877/ZN (NAND2_X1)                                    0.01 @     2.17 f
+  U19878/ZN (NAND2_X1)                                    0.01 @     2.19 r
+  U23379/Z (XOR2_X1)                                      0.04 @     2.23 r
+  U23384/ZN (NAND2_X1)                                    0.02 @     2.25 f
+  U23387/ZN (NAND3_X1)                                    0.01 @     2.26 r
+  U23626/Z (XOR2_X1)                                      0.03 @     2.29 r
+  U23525/ZN (INV_X1)                                      0.01 @     2.30 f
+  U23523/ZN (NAND2_X1)                                    0.01 @     2.31 r
+  U23420/ZN (NAND2_X1)                                    0.02 @     2.33 f
+  U23632/ZN (NAND2_X1)                                    0.01 @     2.34 r
+  U23634/ZN (NAND3_X1)                                    0.02 @     2.36 f
+  u_muldiv_dp_cluster_0_mult_125_S2_26_21/S (FA_X1)       0.07 @     2.43 r
+  u_muldiv_dp_cluster_0_mult_125_S2_27_20/S (FA_X1)       0.07 @     2.50 f
+  U24190/ZN (NAND2_X1)                                    0.01 @     2.51 r
+  U24193/ZN (NAND3_X1)                                    0.02 @     2.53 f
+  U23482/Z (XOR2_X1)                                      0.03 @     2.57 f
+  U23488/ZN (NAND2_X1)                                    0.01 @     2.58 r
+  U23489/ZN (NAND2_X1)                                    0.02 @     2.60 f
+  U24528/ZN (NAND2_X1)                                    0.02 @     2.62 r
+  U1599/ZN (AND3_X1)                                      0.03 @     2.65 r
+  U24401/ZN (NAND2_X1)                                    0.01 @     2.66 f
+  U24403/ZN (NAND2_X1)                                    0.02 @     2.67 r
+  U24430/Z (XOR2_X1)                                      0.03 @     2.70 r
+  U24704/Z (XOR2_X1)                                      0.04 @     2.75 r
+  u_muldiv_dp_cluster_0_mult_125_S2_33_16/S (FA_X1)       0.06 @     2.81 f
+  u_muldiv_dp_cluster_0_mult_125_S2_34_15/S (FA_X1)       0.07 @     2.88 r
+  u_muldiv_dp_cluster_0_mult_125_S2_35_14/S (FA_X1)       0.06 @     2.94 f
+  u_muldiv_dp_cluster_0_mult_125_S2_36_13/CO (FA_X1)      0.04 @     2.97 f
+  R_82_i_r_REG97_S4/D (DFFR_X1)                           0.00 @     2.97 f
+  data arrival time                                                  2.97
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (propagated)                        0.13       3.63
+  clock uncertainty                                      -0.04       3.59
+  R_82_i_r_REG97_S4/CK (DFFR_X1)                          0.00       3.59 r
+  library setup time                                     -0.02       3.57
+  data required time                                                 3.57
+  --------------------------------------------------------------------------
+  data required time                                                 3.57
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_149 (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.13       0.13
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.13 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.08 @     0.20 r
+  U18/ZN (NAND2_X1)                                       0.06 @     0.27 f
+  U24940/ZN (INV_X1)                                      0.12 @     0.39 r
+  U158/ZN (AND2_X1)                                       0.06 @     0.45 r
+  U291/ZN (NAND2_X1)                                      0.01 @     0.47 f
+  U5820/Z (CLKBUF_X2)                                     0.06 @     0.52 f
+  U2671/ZN (OAI22_X1)                                     0.26 @     0.78 r
+  U23716/ZN (NOR3_X1)                                     0.01 @     0.79 f
+  U153/ZN (AND2_X1)                                       0.02 @     0.81 f
+  U297/ZN (AND3_X1)                                       0.02 @     0.83 f
+  U21800/ZN (NAND2_X1)                                    0.02 @     0.84 r
+  U21801/ZN (NAND2_X1)                                    0.02 @     0.86 f
+  U150/ZN (NAND2_X1)                                      0.01 @     0.87 r
+  U14247/ZN (AND2_X1)                                     0.09 @     0.96 r
+  U18633/Z (CLKBUF_X2)                                    0.12 @     1.08 r
+  U21359/Z (XOR2_X1)                                      0.04 @     1.12 r
+  U21368/ZN (INV_X1)                                      0.01 @     1.13 f
+  U21364/ZN (NAND2_X1)                                    0.01 @     1.14 r
+  U21366/ZN (NAND2_X1)                                    0.02 @     1.15 f
+  U21443/ZN (NAND2_X1)                                    0.01 @     1.17 r
+  U21446/ZN (NAND3_X1)                                    0.03 @     1.19 f
+  U21758/Z (XOR2_X1)                                      0.04 @     1.23 f
+  U21555/ZN (INV_X1)                                      0.01 @     1.24 r
+  U21551/ZN (NAND2_X1)                                    0.01 @     1.25 f
+  U21553/ZN (NAND2_X1)                                    0.01 @     1.26 r
+  u_muldiv_dp_cluster_0_mult_125_S2_5_31/S (FA_X1)        0.06 @     1.32 f
+  u_muldiv_dp_cluster_0_mult_125_S2_6_30/S (FA_X1)        0.07 @     1.39 r
+  U20750/ZN (NAND2_X1)                                    0.01 @     1.40 f
+  U19023/ZN (NAND3_X1)                                    0.01 @     1.42 r
+  U19455/Z (XOR2_X1)                                      0.03 @     1.45 r
+  U19330/ZN (INV_X1)                                      0.01 @     1.46 f
+  U19327/ZN (NAND2_X1)                                    0.01 @     1.47 r
+  U19159/ZN (NAND2_X1)                                    0.01 @     1.48 f
+  U19668/ZN (NAND2_X1)                                    0.01 @     1.49 r
+  U19671/ZN (NAND3_X1)                                    0.02 @     1.51 f
+  u_muldiv_dp_cluster_0_mult_125_S2_10_28/S (FA_X1)       0.07 @     1.58 r
+  u_muldiv_dp_cluster_0_mult_125_S2_11_27/S (FA_X1)       0.06 @     1.64 f
+  u_muldiv_dp_cluster_0_mult_125_S2_12_26/CO (FA_X1)      0.04 @     1.68 f
+  u_muldiv_dp_cluster_0_mult_125_S2_13_26/S (FA_X1)       0.07 @     1.75 r
+  u_muldiv_dp_cluster_0_mult_125_S2_14_25/S (FA_X1)       0.06 @     1.80 f
+  u_muldiv_dp_cluster_0_mult_125_S2_15_24/S (FA_X1)       0.06 @     1.87 r
+  u_muldiv_dp_cluster_0_mult_125_S2_16_23/S (FA_X1)       0.06 @     1.93 f
+  U20322/ZN (NAND2_X1)                                    0.01 @     1.95 r
+  U19973/ZN (NAND3_X1)                                    0.02 @     1.96 f
+  U20279/Z (XOR2_X1)                                      0.03 @     2.00 f
+  U20285/ZN (NAND2_X1)                                    0.01 @     2.01 r
+  U20286/ZN (NAND2_X1)                                    0.02 @     2.03 f
+  U22181/ZN (NAND2_X1)                                    0.01 @     2.04 r
+  U22184/ZN (NAND3_X1)                                    0.02 @     2.06 f
+  U21972/ZN (INV_X1)                                      0.01 @     2.07 r
+  U21970/ZN (NAND2_X1)                                    0.01 @     2.08 f
+  U21971/ZN (NAND2_X1)                                    0.01 @     2.09 r
+  U22177/ZN (INV_X1)                                      0.01 @     2.10 f
+  U22173/ZN (NAND2_X1)                                    0.01 @     2.11 r
+  U22175/ZN (NAND2_X1)                                    0.01 @     2.12 f
+  u_muldiv_dp_cluster_0_mult_125_S2_21_20/S (FA_X1)       0.07 @     2.18 r
+  u_muldiv_dp_cluster_0_mult_125_S2_22_19/S (FA_X1)       0.06 @     2.24 f
+  u_muldiv_dp_cluster_0_mult_125_S2_23_18/CO (FA_X1)      0.04 @     2.28 f
+  u_muldiv_dp_cluster_0_mult_125_S2_24_18/CO (FA_X1)      0.04 @     2.33 f
+  u_muldiv_dp_cluster_0_mult_125_S2_25_18/S (FA_X1)       0.07 @     2.40 r
+  u_muldiv_dp_cluster_0_mult_125_S2_26_17/S (FA_X1)       0.06 @     2.46 f
+  u_muldiv_dp_cluster_0_mult_125_S2_27_16/S (FA_X1)       0.07 @     2.53 r
+  u_muldiv_dp_cluster_0_mult_125_S2_28_15/S (FA_X1)       0.06 @     2.58 f
+  u_muldiv_dp_cluster_0_mult_125_S2_29_14/CO (FA_X1)      0.04 @     2.63 f
+  U21423/Z (XOR2_X1)                                      0.03 @     2.66 f
+  U21428/ZN (NAND2_X1)                                    0.01 @     2.67 r
+  U21429/ZN (NAND2_X1)                                    0.02 @     2.69 f
+  U24158/ZN (NAND2_X1)                                    0.01 @     2.71 r
+  U24161/ZN (NAND3_X1)                                    0.02 @     2.73 f
+  u_muldiv_dp_cluster_0_mult_125_S2_32_13/S (FA_X1)       0.07 @     2.80 r
+  u_muldiv_dp_cluster_0_mult_125_S2_33_12/S (FA_X1)       0.06 @     2.86 f
+  u_muldiv_dp_cluster_0_mult_125_S2_34_11/CO (FA_X1)      0.04 @     2.90 f
+  u_muldiv_dp_cluster_0_mult_125_S2_35_11/S (FA_X1)       0.07 @     2.97 r
+  R_149/D (DFFR_X1)                                       0.00 @     2.97 r
+  data arrival time                                                  2.97
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (propagated)                        0.13       3.63
+  clock uncertainty                                      -0.04       3.59
+  R_149/CK (DFFR_X1)                                      0.00       3.59 r
+  library setup time                                     -0.02       3.57
+  data required time                                                 3.57
+  --------------------------------------------------------------------------
+  data required time                                                 3.57
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_130_i_r_REG189_S33
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.13       0.13
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.13 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.08 @     0.20 r
+  U18/ZN (NAND2_X1)                                       0.06 @     0.27 f
+  U24940/ZN (INV_X1)                                      0.12 @     0.39 r
+  U158/ZN (AND2_X1)                                       0.06 @     0.45 r
+  U291/ZN (NAND2_X1)                                      0.01 @     0.47 f
+  U5820/Z (CLKBUF_X2)                                     0.06 @     0.52 f
+  U2671/ZN (OAI22_X1)                                     0.26 @     0.78 r
+  U23716/ZN (NOR3_X1)                                     0.01 @     0.79 f
+  U153/ZN (AND2_X1)                                       0.02 @     0.81 f
+  U297/ZN (AND3_X1)                                       0.02 @     0.83 f
+  U21800/ZN (NAND2_X1)                                    0.02 @     0.84 r
+  U21801/ZN (NAND2_X1)                                    0.02 @     0.86 f
+  U150/ZN (NAND2_X1)                                      0.01 @     0.87 r
+  U14247/ZN (AND2_X1)                                     0.09 @     0.96 r
+  U18633/Z (CLKBUF_X2)                                    0.12 @     1.08 r
+  U21359/Z (XOR2_X1)                                      0.04 @     1.12 r
+  U21368/ZN (INV_X1)                                      0.01 @     1.13 f
+  U21364/ZN (NAND2_X1)                                    0.01 @     1.14 r
+  U21366/ZN (NAND2_X1)                                    0.02 @     1.15 f
+  U21443/ZN (NAND2_X1)                                    0.01 @     1.17 r
+  U21446/ZN (NAND3_X1)                                    0.03 @     1.19 f
+  U21758/Z (XOR2_X1)                                      0.04 @     1.23 f
+  U21555/ZN (INV_X1)                                      0.01 @     1.24 r
+  U21551/ZN (NAND2_X1)                                    0.01 @     1.25 f
+  U21553/ZN (NAND2_X1)                                    0.01 @     1.26 r
+  u_muldiv_dp_cluster_0_mult_125_S2_5_31/S (FA_X1)        0.06 @     1.32 f
+  u_muldiv_dp_cluster_0_mult_125_S2_6_30/S (FA_X1)        0.07 @     1.39 r
+  U20750/ZN (NAND2_X1)                                    0.01 @     1.40 f
+  U19023/ZN (NAND3_X1)                                    0.01 @     1.42 r
+  U19455/Z (XOR2_X1)                                      0.03 @     1.45 r
+  U19330/ZN (INV_X1)                                      0.01 @     1.46 f
+  U19327/ZN (NAND2_X1)                                    0.01 @     1.47 r
+  U19159/ZN (NAND2_X1)                                    0.01 @     1.48 f
+  U19668/ZN (NAND2_X1)                                    0.01 @     1.49 r
+  U19671/ZN (NAND3_X1)                                    0.02 @     1.51 f
+  u_muldiv_dp_cluster_0_mult_125_S2_10_28/S (FA_X1)       0.07 @     1.58 r
+  u_muldiv_dp_cluster_0_mult_125_S2_11_27/S (FA_X1)       0.06 @     1.64 f
+  u_muldiv_dp_cluster_0_mult_125_S2_12_26/CO (FA_X1)      0.04 @     1.68 f
+  u_muldiv_dp_cluster_0_mult_125_S2_13_26/S (FA_X1)       0.07 @     1.75 r
+  u_muldiv_dp_cluster_0_mult_125_S2_14_25/S (FA_X1)       0.06 @     1.80 f
+  u_muldiv_dp_cluster_0_mult_125_S2_15_24/S (FA_X1)       0.06 @     1.87 r
+  u_muldiv_dp_cluster_0_mult_125_S2_16_23/S (FA_X1)       0.06 @     1.93 f
+  U20322/ZN (NAND2_X1)                                    0.01 @     1.95 r
+  U19973/ZN (NAND3_X1)                                    0.02 @     1.96 f
+  U20279/Z (XOR2_X1)                                      0.03 @     2.00 f
+  U20288/ZN (INV_X1)                                      0.01 @     2.00 r
+  U20284/ZN (NAND2_X1)                                    0.01 @     2.01 f
+  U20286/ZN (NAND2_X1)                                    0.02 @     2.03 r
+  U22181/ZN (NAND2_X1)                                    0.01 @     2.05 f
+  U22184/ZN (NAND3_X1)                                    0.01 @     2.06 r
+  U21972/ZN (INV_X1)                                      0.01 @     2.07 f
+  U21970/ZN (NAND2_X1)                                    0.01 @     2.07 r
+  U21971/ZN (NAND2_X1)                                    0.01 @     2.09 f
+  U22177/ZN (INV_X1)                                      0.01 @     2.09 r
+  U22173/ZN (NAND2_X1)                                    0.01 @     2.10 f
+  U22175/ZN (NAND2_X1)                                    0.01 @     2.12 r
+  u_muldiv_dp_cluster_0_mult_125_S2_21_20/S (FA_X1)       0.06 @     2.17 f
+  u_muldiv_dp_cluster_0_mult_125_S2_22_19/S (FA_X1)       0.07 @     2.24 r
+  u_muldiv_dp_cluster_0_mult_125_S2_23_18/S (FA_X1)       0.06 @     2.30 f
+  u_muldiv_dp_cluster_0_mult_125_S2_24_17/S (FA_X1)       0.07 @     2.37 r
+  u_muldiv_dp_cluster_0_mult_125_S2_25_16/S (FA_X1)       0.06 @     2.42 f
+  u_muldiv_dp_cluster_0_mult_125_S2_26_15/CO (FA_X1)      0.04 @     2.46 f
+  u_muldiv_dp_cluster_0_mult_125_S2_27_15/CO (FA_X1)      0.05 @     2.51 f
+  u_muldiv_dp_cluster_0_mult_125_S2_28_15/S (FA_X1)       0.07 @     2.58 r
+  u_muldiv_dp_cluster_0_mult_125_S2_29_14/S (FA_X1)       0.06 @     2.64 f
+  U2684/ZN (NAND2_X1)                                     0.01 @     2.65 r
+  U2885/ZN (NAND3_X1)                                     0.03 @     2.69 f
+  U24157/Z (XOR2_X1)                                      0.04 @     2.72 f
+  U24163/ZN (NAND2_X1)                                    0.01 @     2.74 r
+  U24164/ZN (NAND2_X1)                                    0.01 @     2.75 f
+  u_muldiv_dp_cluster_0_mult_125_S2_32_12/S (FA_X1)       0.06 @     2.81 r
+  u_muldiv_dp_cluster_0_mult_125_S2_33_11/S (FA_X1)       0.06 @     2.87 f
+  u_muldiv_dp_cluster_0_mult_125_S2_34_10/S (FA_X1)       0.06 @     2.93 r
+  u_muldiv_dp_cluster_0_mult_125_S2_35_9/CO (FA_X1)       0.03 @     2.96 r
+  R_130_i_r_REG189_S33/D (DFFR_X1)                        0.00 @     2.96 r
+  data arrival time                                                  2.96
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (propagated)                        0.12       3.62
+  clock uncertainty                                      -0.04       3.59
+  R_130_i_r_REG189_S33/CK (DFFR_X1)                       0.00       3.59 r
+  library setup time                                     -0.02       3.56
+  data required time                                                 3.56
+  --------------------------------------------------------------------------
+  data required time                                                 3.56
+  data arrival time                                                 -2.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: clk_i_r_REG2375_S10
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: R_76 (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.13       0.13
+  clk_i_r_REG2375_S10/CK (DFFR_X1)                        0.00       0.13 r
+  clk_i_r_REG2375_S10/Q (DFFR_X1)                         0.08 @     0.20 r
+  U18/ZN (NAND2_X1)                                       0.06 @     0.27 f
+  U24940/ZN (INV_X1)                                      0.12 @     0.39 r
+  U158/ZN (AND2_X1)                                       0.06 @     0.45 r
+  U291/ZN (NAND2_X1)                                      0.01 @     0.47 f
+  U5820/Z (CLKBUF_X2)                                     0.06 @     0.52 f
+  U2671/ZN (OAI22_X1)                                     0.26 @     0.78 r
+  U23716/ZN (NOR3_X1)                                     0.01 @     0.79 f
+  U153/ZN (AND2_X1)                                       0.02 @     0.81 f
+  U297/ZN (AND3_X1)                                       0.02 @     0.83 f
+  U21800/ZN (NAND2_X1)                                    0.02 @     0.84 r
+  U21801/ZN (NAND2_X1)                                    0.02 @     0.86 f
+  U150/ZN (NAND2_X1)                                      0.01 @     0.87 r
+  U14247/ZN (AND2_X1)                                     0.09 @     0.96 r
+  U18633/Z (CLKBUF_X2)                                    0.12 @     1.08 r
+  U20719/Z (XOR2_X1)                                      0.04 @     1.12 r
+  U20728/ZN (INV_X1)                                      0.01 @     1.13 f
+  U20724/ZN (NAND2_X1)                                    0.01 @     1.14 r
+  U20726/ZN (NAND2_X1)                                    0.02 @     1.16 f
+  U21398/ZN (NAND2_X1)                                    0.01 @     1.17 r
+  U21167/ZN (NAND3_X1)                                    0.02 @     1.19 f
+  U21600/Z (XOR2_X1)                                      0.03 @     1.22 f
+  U21609/ZN (INV_X1)                                      0.01 @     1.23 r
+  U21605/ZN (NAND2_X1)                                    0.01 @     1.24 f
+  U21607/ZN (NAND2_X1)                                    0.02 @     1.26 r
+  U22350/ZN (NAND2_X1)                                    0.01 @     1.27 f
+  U22201/ZN (NAND3_X1)                                    0.01 @     1.29 r
+  U22491/Z (XOR2_X1)                                      0.03 @     1.32 r
+  U22500/ZN (INV_X1)                                      0.01 @     1.33 f
+  U22496/ZN (NAND2_X1)                                    0.01 @     1.34 r
+  U22498/ZN (NAND2_X1)                                    0.02 @     1.35 f
+  U22779/ZN (NAND2_X1)                                    0.01 @     1.37 r
+  U22632/ZN (NAND3_X1)                                    0.02 @     1.39 f
+  U23108/Z (XOR2_X1)                                      0.03 @     1.42 f
+  U23117/ZN (INV_X1)                                      0.01 @     1.43 r
+  U23113/ZN (NAND2_X1)                                    0.01 @     1.44 f
+  U20539/ZN (NAND2_X1)                                    0.01 @     1.45 r
+  U23349/ZN (NAND2_X1)                                    0.01 @     1.47 f
+  U23194/ZN (NAND3_X1)                                    0.01 @     1.48 r
+  U23736/Z (XOR2_X1)                                      0.03 @     1.51 r
+  U23745/ZN (INV_X1)                                      0.01 @     1.52 f
+  U23741/ZN (NAND2_X1)                                    0.01 @     1.53 r
+  U23743/ZN (NAND2_X1)                                    0.01 @     1.54 f
+  u_muldiv_dp_cluster_0_mult_125_S2_11_31/S (FA_X1)       0.06 @     1.60 r
+  u_muldiv_dp_cluster_0_mult_125_S2_12_30/S (FA_X1)       0.06 @     1.66 f
+  u_muldiv_dp_cluster_0_mult_125_S2_13_29/S (FA_X1)       0.07 @     1.73 r
+  u_muldiv_dp_cluster_0_mult_125_S2_14_28/S (FA_X1)       0.06 @     1.78 f
+  u_muldiv_dp_cluster_0_mult_125_S2_15_27/S (FA_X1)       0.07 @     1.85 r
+  u_muldiv_dp_cluster_0_mult_125_S2_16_26/S (FA_X1)       0.06 @     1.91 f
+  u_muldiv_dp_cluster_0_mult_125_S2_17_25/CO (FA_X1)      0.05 @     1.95 f
+  U19006/Z (XOR2_X1)                                      0.03 @     1.99 f
+  U19007/Z (XOR2_X1)                                      0.03 @     2.02 f
+  u_muldiv_dp_cluster_0_mult_125_S2_19_24/CO (FA_X1)      0.04 @     2.06 f
+  U19765/Z (XOR2_X1)                                      0.03 @     2.10 f
+  U19771/ZN (NAND2_X1)                                    0.01 @     2.11 r
+  U19020/ZN (NAND2_X1)                                    0.01 @     2.12 f
+  U19816/ZN (NAND2_X1)                                    0.01 @     2.14 r
+  U1391/ZN (AND3_X1)                                      0.03 @     2.17 r
+  U19877/ZN (NAND2_X1)                                    0.01 @     2.17 f
+  U19878/ZN (NAND2_X1)                                    0.01 @     2.19 r
+  U23379/Z (XOR2_X1)                                      0.04 @     2.23 r
+  U23384/ZN (NAND2_X1)                                    0.02 @     2.25 f
+  U23387/ZN (NAND3_X1)                                    0.01 @     2.26 r
+  U23626/Z (XOR2_X1)                                      0.03 @     2.29 r
+  U23525/ZN (INV_X1)                                      0.01 @     2.30 f
+  U23523/ZN (NAND2_X1)                                    0.01 @     2.31 r
+  U23420/ZN (NAND2_X1)                                    0.02 @     2.33 f
+  U23632/ZN (NAND2_X1)                                    0.01 @     2.34 r
+  U23634/ZN (NAND3_X1)                                    0.02 @     2.36 f
+  u_muldiv_dp_cluster_0_mult_125_S2_26_21/CO (FA_X1)      0.04 @     2.41 f
+  u_muldiv_dp_cluster_0_mult_125_S2_27_21/CO (FA_X1)      0.04 @     2.45 f
+  u_muldiv_dp_cluster_0_mult_125_S2_28_21/S (FA_X1)       0.07 @     2.52 r
+  u_muldiv_dp_cluster_0_mult_125_S2_29_20/S (FA_X1)       0.06 @     2.58 f
+  u_muldiv_dp_cluster_0_mult_125_S2_30_19/CO (FA_X1)      0.05 @     2.63 f
+  U24086/ZN (INV_X1)                                      0.01 @     2.64 r
+  U24084/ZN (NAND2_X1)                                    0.01 @     2.65 f
+  U24085/ZN (NAND2_X1)                                    0.01 @     2.66 r
+  U24659/ZN (INV_X1)                                      0.01 @     2.66 f
+  U24655/ZN (NAND2_X1)                                    0.01 @     2.67 r
+  U24657/ZN (NAND2_X1)                                    0.01 @     2.69 f
+  u_muldiv_dp_cluster_0_mult_125_S2_32_18/S (FA_X1)       0.07 @     2.76 r
+  u_muldiv_dp_cluster_0_mult_125_S2_33_17/S (FA_X1)       0.06 @     2.82 f
+  u_muldiv_dp_cluster_0_mult_125_S2_34_16/CO (FA_X1)      0.04 @     2.86 f
+  u_muldiv_dp_cluster_0_mult_125_S2_35_16/S (FA_X1)       0.07 @     2.93 r
+  u_muldiv_dp_cluster_0_mult_125_S2_36_15/CO (FA_X1)      0.03 @     2.96 r
+  R_76/D (DFFR_X1)                                        0.00 @     2.97 r
+  data arrival time                                                  2.97
+
+  clock clk_i (rise edge)                                 3.50       3.50
+  clock network delay (propagated)                        0.13       3.63
+  clock uncertainty                                      -0.04       3.59
+  R_76/CK (DFFR_X1)                                       0.00       3.59 r
+  library setup time                                     -0.02       3.57
+  data required time                                                 3.57
+  --------------------------------------------------------------------------
+  data required time                                                 3.57
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+1
